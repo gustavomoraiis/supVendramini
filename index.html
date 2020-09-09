@@ -25,32 +25,35 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+       
+          <ul class="nav nav-pills laranja2" id="mainNav">
+            <li><a class="laranja2" href="#pao1">Energia Solar </a></li>
+            <li><a class="laranja2" href="#pao2">Automação Residencial </a></li>
+            <li><a class="laranja2" href="#pao3">Contato </a></li>
           </ul>
-        </div>
+        
       </nav>
+
+        <!-- <div class="header-row">
+          <div class="header-nav header-nav-links order-2 order-lg-1">
+              <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                  <nav class="collapse">
+                      <ul class="nav nav-pills laranja2" id="mainNav">
+                          <li><a class="laranja2" href="#pao1">Energia Solar </a></li>
+                          <li><a class="laranja2" href="#pao2">Automação Residencial </a></li>
+                          <li><a class="laranja2" href="#pao3">Contato </a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                  <i class="fas fa-bars"></i>
+              </button>
+          </div>
+        </div> -->
+
     </header>
 
+  <section id="pao1">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -89,8 +92,9 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-   
-    <section>
+  </section>
+
+    <section id="pao2">
       <div class="container">
           <h1>Sobre nos</h1>
           <ul>
@@ -101,7 +105,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="pao3">
       <div class="container teal borderYtoX">
         <a>HOME</a>
         <a>ARTICLES</a>
@@ -221,5 +225,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
     <script src="js/custom.js"></script>
+
+    <script src="js/slideNav.js"></script>
+    <script>
+       var nav = new SlideNav({
+	    activeClass: "active",
+	    toggleButtonSelector: false,
+	    toggleBoxSelector: false,
+	    hideAfterSelect: true,
+	    speed: 70,
+	    changeHash: false,
+	    navBoxToggleClass: false
+       });
+    </script>
   </body>
 </html>
