@@ -1,31 +1,242 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<!-- Head-->
-<!-- teste de comentário para testar o git  -->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mercado Vendramini">
-  <meta name="author" content="Gustavo H">
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <title>Mercado VENDRAMINI</title>
-  <!-- Template CSS -->
-  <link href="css/style.css" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mercado Vendramini">
+    <meta name="author" content="Gustavo H">
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
 
-  <!-- Favicon -->
-  <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
-</head>
-<!-- // Head-->
-<body  class="loading">
-  
+    <script src="https://kit.fontawesome.com/a21f2f3339.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+
+    <title>Supermercado Vendramini</title>
+  </head>
+  <body>
     <header>
-           
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+          <ul class="nav nav-pills laranja2" id="mainNav">
+            <li><a class="laranja2" href="#pao1">Energia Solar </a></li>
+            <li><a class="laranja2" href="#pao2">Automação Residencial </a></li>
+            <li><a class="laranja2" href="#pao3">Contato </a></li>
+          </ul>
+        
+      </nav>
+
+        <!-- <div class="header-row">
+          <div class="header-nav header-nav-links order-2 order-lg-1">
+              <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                  <nav class="collapse">
+                      <ul class="nav nav-pills laranja2" id="mainNav">
+                          <li><a class="laranja2" href="#pao1">Energia Solar </a></li>
+                          <li><a class="laranja2" href="#pao2">Automação Residencial </a></li>
+                          <li><a class="laranja2" href="#pao3">Contato </a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                  <i class="fas fa-bars"></i>
+              </button>
+          </div>
+        </div> -->
+
     </header>
+
+  <section id="pao1">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/img-carro.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/img-carro.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/img-carro.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+    <section id="pao2">
+      <div class="container">
+          <h1>Sobre nos</h1>
+          <ul>
+            <li>dale</li>
+            <li>dele</li>
+            <li>dole</li>
+          </ul>
+      </div>
+    </section>
+
+    <section id="pao3">
+      <div class="container teal borderYtoX">
+        <a>HOME</a>
+        <a>ARTICLES</a>
+        <a>PORTFOLIO</a>
+        <a>ABOUT</a>
+        <a>CONTACT</a>
+      </div>
+    </section>
+
+
+    <!-- ============================ Footer Start ================================== -->
+      <footer class="dark-footer skin-dark-footer">
+        <div>
+          <div class="container">
+            <div class="row">
+              
+              <div class="col-lg-3 col-md-3">
+                <div class="footer-widget">
+                  <img src="img/logo-light.png" class="img-footer" alt="" />
+                  <div class="footer-add">
+                  </div>
+                </div>
+              </div>		
+              
             
-               
-</body>
-<!-- // Body -->
+              <div class="col-lg-2 col-md-3">
+                <div class="footer-widget">
+                  <h4 class="widget-title">Mapa do Site</h4>
+                  <ul class="footer-menu">
+                    <li><a href="propriedades.php">Alugar</a></li>
+                    <li><a href="propriedades.php">Comprar</a></li>
+                    <li><a href="anuncie.php">Anuncie</a></li>
+                    <li><a href="index.php#contato">Contato</a></li>
+                  
+                  </ul>
+                </div>
+              </div>
+              
+              <!-- <div class="col-lg-2 col-md-2">
+                <div class="footer-widget">
+                  <h4 class="widget-title">My Account</h4>
+                  <ul class="footer-menu">
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">My Property</a></li>
+                    <li><a href="#">Favorites</a></li>
+                    <li><a href="#">Cart</a></li>
+                  </ul>
+                </div>
+              </div> -->
+              
+              <div class="col-lg-3 col-md-3">
+                <div class="footer-widget">
+                  <h4 class="widget-title">Redes Sociais</h4>
+                  <a href="" target="_blank" class="other-store-link">
+                    <div class="other-store-app">
+                      <div class="os-app-icon">
+                        <i class="lni-facebook theme-cl"></i>
+                      </div>
+                      <div class="os-app-caps">
+                        Facebook
+                        <span>Siga-nos</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" target="_blank" class="other-store-link">
+                    <div class="other-store-app">
+                      <div class="os-app-icon">
+                        <i class="lni-instagram theme-cl"></i>
+                      </div>
+                      <div class="os-app-caps">
+                        Instagram
+                        <span>Siga-nos</span>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="" target="_blank" class="other-store-link">
+                    <div class="other-store-app">
+                      <div class="os-app-icon">
+                        <i class="fab fa-youtube theme-cl"></i>
+                      </div>
+                      <div class="os-app-caps">
+                        You Tube
+                        <span>Siga-nos</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row align-items-center">
+              
+              <div class="col-lg-6 col-md-6">
+                <p class="mb-0">© LT Imóveis Todos Direitos Reservados</p>
+              </div>
+              
+              <div class="col-lg-6 col-md-6 text-right">
+                <p class="mb-0">Desenvolvido por <a target="_blank" href="http://www.datacampo.com.br/">DataCampo</a></p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- ============================ Footer End ================================== -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+    <script src="js/custom.js"></script>
+
+    <script src="js/slideNav.js"></script>
+    <script>
+       var nav = new SlideNav({
+	    activeClass: "active",
+	    toggleButtonSelector: false,
+	    toggleBoxSelector: false,
+	    hideAfterSelect: true,
+	    speed: 70,
+	    changeHash: false,
+	    navBoxToggleClass: false
+       });
+    </script>
+  </body>
 </html>
-<!-- // HTML -->
