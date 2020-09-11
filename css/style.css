@@ -274,5 +274,19 @@ footer a:hover, a:focus{
 .skin-dark-footer .form-control:-ms-input-placeholder{color:#9ea6ba;}
 .skin-dark-footer .form-control::placeholder{color:#9ea6ba;}
 
+/* PARALAXX */
+.parallax {
+	background-color: transparent;
+	background-attachment: scroll;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	will-change: transform;
+}
 
-
+.mobile-parallax,
+.video-placeholder {
+	background-size: cover !important;
+	background-attachment: scroll !important;
+	background-position: center center !important;
+}
