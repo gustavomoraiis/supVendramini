@@ -290,3 +290,38 @@ footer a:hover, a:focus{
 	background-attachment: scroll !important;
 	background-position: center center !important;
 }
+
+.hero-diagonal { position: relative; }
+
+.hero-diagonal::before {
+	content: '';
+	position: absolute;
+	top: -50px;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 100px);
+	-webkit-clip-path: polygon(0 9%, 100% 0%, 100% 91%, 0 100%);
+	clip-path: polygon(0 9%, 100% 0%, 100% 91%, 0 100%);
+	/* background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('images/section.jpg'); */
+	background-position: center center;
+	background-size: cover;
+}
+
+.topmargin-lg { margin-top: 5rem !important; }
+.bottommargin-lg { margin-bottom: 5rem !important; }
+
+
+ /* MENU */
+
+ a:active { 
+     outline: none; 
+     color: #f45744:}
+
+ .ativo:hover{
+    color:  #f45744;;
+}
+
+/* .nav-pills a{
+    text-decoration: none;
+    color: wheat;
+} */
