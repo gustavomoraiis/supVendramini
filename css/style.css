@@ -312,16 +312,20 @@ footer a:hover, a:focus{
 
 
  /* MENU */
-
  a:active { 
      outline: none; 
-     color: #f45744:}
+     color: #f45744 !important
+    }
 
  .ativo:hover{
-    color:  #f45744;;
+    color:  #f45744 !important;
 }
 
-/* .nav-pills a{
-    text-decoration: none;
-    color: wheat;
-} */
+.nav-pills > li > a {
+  padding: 0px 10px;
+  text-decoration: none !important;
+} 
+
+#header .header-body{
+    position: fixed;
+}

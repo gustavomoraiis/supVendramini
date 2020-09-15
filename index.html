@@ -14,12 +14,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
     <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
 
     <title>Supermercado Vendramini</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +34,48 @@
             <li><a class="ativo" href="#pao4">Contato </a></li>
           </ul>
       </nav>
+    </header> -->
 
-      
-
- 
-
-    </header>
+            <!--Header-->
+            <header id="header" class="header-effect-reveal" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'reveal', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 200, 'stickySetTop': '-45px'}">
+              <div class="header-body">
+                  <div class="header-container container">
+                      <div class="header-row">
+                          <div class="header-column">
+                              <div class="header-row">
+                                  <div class="header-logo">
+                                      <a href="index.html">
+                                          <img alt="Vertex" width="116" height="50" data-sticky-width="216" data-sticky-height="50" data-sticky-top="26" src="img/nome_logo_right.png">
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="header-column justify-content-end">
+                      
+                              <div class="header-row">
+                                  <div class="header-nav header-nav-links order-2 order-lg-1">
+                                      <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                          <nav class="collapse">
+                                            <ul class="nav nav-pills ativo" id="mainNav">
+                                              <li><a class="ativo" href="#pao1">Oferta do dia </a></li>
+                                              <li><a class="ativo" href="#pao2">Pedidos </a></li>
+                                              <li><a class="ativo" href="#pao3">Sobre Nós </a></li>
+                                              <li><a class="ativo" href="#pao4">Contato </a></li>
+                                            </ul>
+                                          </nav>
+                                      </div>
+                                      
+                                      <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                                          <i class="fas fa-bars"></i>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </header>
+          <!--End Header-->
 
   <section id="pao1">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
