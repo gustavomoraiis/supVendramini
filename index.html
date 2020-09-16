@@ -174,6 +174,12 @@
           </div>
         </section>
 
+        <section id="contato">
+          <div class="container">
+              <div id="map"></div>
+          </div>
+        </section>
+
 
     <!-- ============================ Footer Start ================================== -->
       <footer class="dark-footer skin-dark-footer">
@@ -281,6 +287,27 @@
 
     <script src="js/slideNav.js"></script>
     <script src="js/functions.js"></script>
+
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {lat: -23.7966729, lng: -52.2606513};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 16, center: uluru});
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({position: uluru, map: map});
+      }
+    </script>
+         
+         <script defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-rSbLnRCRq-5t0aobBwX--iZqXaTFyjg&callback=initMap">
+         </script>
+
+    
+     
+    
 
     <script>
        var nav = new SlideNav({
