@@ -1,6 +1,13 @@
-.menu{
-    background-color: aqua;
-    color: red;
+body {
+	line-height: 1.5;
+	color: #555;
+	font-family: 'Lato', sans-serif;
+}
+
+::selection {
+	background:  #ed1b23;
+	color: #FFF;
+	text-shadow: none;
 }
 
 /*---------- Small footer -------------------*/
