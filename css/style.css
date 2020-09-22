@@ -277,19 +277,19 @@ footer a:hover, a:focus{
 /* PARALAXX */
 .parallax {
 	background-color: transparent;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
 	overflow: hidden;
 	will-change: transform;
 }
 
-.mobile-parallax,
-.video-placeholder {
+.mobile-parallax {
 	background-size: cover !important;
 	background-attachment: scroll !important;
 	background-position: center center !important;
 }
+
 
 .hero-diagonal { position: relative; }
 
