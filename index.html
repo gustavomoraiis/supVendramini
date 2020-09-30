@@ -20,6 +20,7 @@
     <title>Supermercado Vendramini</title>
   </head>
   <body>
+    <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
     <!-- <header>
       <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -43,11 +44,9 @@
                       <div class="header-row">
                           <div class="header-column">
                               <div class="header-row">
-                                  <div class="header-logo">
-                                      <a href="index.html">
-                                          <img alt="Vertex" width="116" height="50" data-sticky-width="216" data-sticky-height="50" data-sticky-top="26" src="img/nome_logo_right.png">
-                                      </a>
-                                  </div>
+                                    <a href="index.html">
+                                        <img alt="Vertex" width="215" height="63" data-sticky-width="215" data-sticky-height="63" data-sticky-top="20" src="img/nome_logo_right.png">
+                                    </a>
                               </div>
                           </div>
                           <div class="header-column justify-content-end">
@@ -59,6 +58,7 @@
                                             <ul class="nav nav-pills ativo" id="mainNav">
                                               <li><a class="ativo" href="#pao1">Oferta do dia </a></li>
                                               <li><a class="ativo" href="#pao2">Pedidos </a></li>
+                                              <li><a class="ativo" href="#pao2">Produtos </a></li>
                                               <li><a class="ativo" href="#pao3">Sobre Nós </a></li>
                                               <li><a class="ativo" href="#pao4">Contato </a></li>
                                             </ul>
@@ -77,8 +77,10 @@
           </header>
           <!--End Header-->
 
+         
+
   <section id="pao1">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -140,12 +142,12 @@
 
     <!-- Slider
 		============================================= -->
-		<section id="page-title" class="parallax page-title-dark center" style="background-image: url('img/img-carro.jpg'); background-size: cover; padding: 100px 0;" data-100-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -100px;">
+		<section id="page-title" class="parallax page-title-dark center" style="background-image: url('img/churrasco_midia1.jpg'); background-size: cover; padding: 200px 0;" data-100-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -100px;">
 
 			<div class="container clearfix" style="z-index: 2">
 				<div class="emphasis-title">
-					<h1 class="font-secondary" style="color: #FFF; font-size: 76px; font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">FRASE DESTAQUE</h1>
-					<p style="font-weight: 300; opacity: .7; color: #FFF; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">DALE DALE DALE DELE DOLE</p>
+					<!-- <h1 class="font-secondary" style="color: #FFF; font-size: 76px; font-weight: 900; text-shadow: 0 7px 10px rgba(0,0,0,0.07), 0 4px 4px rgba(0,0,0,0.2);">FRASE DESTAQUE</h1>
+					<p style="font-weight: 300; opacity: .7; color: #FFF; text-shadow: 0 -4px 20px rgba(0, 0, 0, .25);">DALE DALE DALE DELE DOLE</p> -->
 				</div>
 			</div>
 
@@ -265,7 +267,7 @@
             </div>
           </div>
         </div>
-        
+       
         <div class="footer-bottom">
           <div class="container">
             <div class="row align-items-center">
@@ -283,7 +285,8 @@
         </div>
       </footer>
     <!-- ============================ Footer End ================================== -->
-
+    
+    <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -312,5 +315,6 @@
 	    navBoxToggleClass: false
        });
     </script>
+
   </body>
 </html>

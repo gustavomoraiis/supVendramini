@@ -337,8 +337,112 @@ footer a:hover, a:focus{
     position: fixed;
 }
 
- /* GOOGLE MAPS */
- #map {
-    height: 400px;  /* The height is 400 pixels */
-    width: 100%;  /* The width is the width of the web page */
-   }
+/*====================================
+ Bottom To top Scroll
+=====================================*/
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    background:#005446;
+    color: #ffffff;
+    border: 1px solid #fff;
+}
+#back2Top:hover {
+    background-color:#ffffff;
+    color:#005446;
+    border: 1px solid #005446;
+}
+
+/*------------------------------------
+	Preloader
+------------------------------------*/
+.dark #preloader {
+    background-color: #232323;
+  }
+  
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f7f7f7;
+    z-index: 999999;
+  }
+  
+  .preloader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0px;
+    text-align: left;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+  }
+  
+  .preloader span {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #285548;
+    -webkit-animation: preloader 1.3s linear infinite;
+    animation: preloader 1.3s linear infinite;
+  }
+  
+  .preloader span:last-child {
+    animation-delay: -0.8s;
+    -webkit-animation-delay: -0.8s;
+  }
+  
+  .padinb80{
+      padding-bottom: 80;
+  }
+  
+  @keyframes preloader {
+    0% {
+      transform: scale(0, 0);
+      opacity: 0.5;
+    }
+  
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes preloader {
+    0% {
+      -webkit-transform: scale(0, 0);
+      opacity: 0.5;
+    }
+  
+    100% {
+      -webkit-transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+  form.dropzone.dz-clickable.primary-dropzone {
+      background: #f9fafc;
+      border: 1px solid #ebedf5;
+  }
+  
+  /*--- end of preloader ---*/
+
+
