@@ -1,3 +1,29 @@
+$(function() {
+    "use strict";
+	
+	$(window).on('load', function () {
+		$('#preloader').delay(350).fadeOut('slow');
+		$('body').delay(350).css({ 'overflow': 'visible' });
+	})
+	
+	/*---- Bottom To Top Scroll Script ---*/
+	$(window).on('scroll', function() {
+		var height = $(window).scrollTop();
+		if (height > 100) {
+			$('#back2Top').fadeIn();
+		} else {
+			$('#back2Top').fadeOut();
+		}
+	});
+	
+	$("#back2Top").on('click', function(event) {
+		event.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		return false;
+	});
+
+});
+
 function scrollFooter(scrollY, heightFooter)
 {
     console.log(scrollY);
@@ -55,31 +81,7 @@ $(window).load(function(){
     }
 });
 
-$(function() {
-    "use strict";
-	
-	$(window).on('load', function () {
-		$('#preloader').delay(350).fadeOut('slow');
-		$('body').delay(350).css({ 'overflow': 'visible' });
-	})
-	
-	/*---- Bottom To Top Scroll Script ---*/
-	$(window).on('scroll', function() {
-		var height = $(window).scrollTop();
-		if (height > 100) {
-			$('#back2Top').fadeIn();
-		} else {
-			$('#back2Top').fadeOut();
-		}
-	});
-	
-	$("#back2Top").on('click', function(event) {
-		event.preventDefault();
-		$("html, body").animate({ scrollTop: 0 }, "slow");
-		return false;
-	});
 
-});
 
 
 
