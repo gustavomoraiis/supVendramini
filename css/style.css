@@ -321,11 +321,11 @@ footer a:hover, a:focus{
  /* MENU */
  a:active { 
      outline: none; 
-     color: #f45744 !important
+     color: #ef1523 !important
     }
 
  .ativo:hover{
-    color:  #f45744 !important;
+    color:  #ef1523 !important;
 }
 
 .nav-pills > li > a {
@@ -354,14 +354,16 @@ footer a:hover, a:focus{
     font-size: 15px;
     border-radius: 4px;
     text-decoration: none;
-    background:#005446;
+    background:#ef1523;
     color: #ffffff;
     border: 1px solid #fff;
+     transition: all ease 0.4s;
 }
 #back2Top:hover {
     background-color:#ffffff;
-    color:#005446;
-    border: 1px solid #005446;
+    color:#ef1523;
+    border: 1px solid #ef1523;
+    transition: all ease 0.4s;
 }
 
 /*------------------------------------
