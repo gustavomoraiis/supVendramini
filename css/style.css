@@ -400,10 +400,10 @@ footer a:hover, a:focus{
   .preloader span {
     position: absolute;
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-radius: 100%;
-    background: #285548;
+    background: #ef1523;
     -webkit-animation: preloader 1.3s linear infinite;
     animation: preloader 1.3s linear infinite;
   }
