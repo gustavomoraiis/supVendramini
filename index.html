@@ -19,69 +19,56 @@
     <title>Supermercado Vendramini</title>
   </head>
   <body>
+     <!-- ########################## PRELOADER ##########################-->
     <div id="preloader"><div class="preloader"><span></span>
       <span></span>
       <span></span>
       <span></span></div></div>
     
-    <!-- <header>
-      <nav class="navbar fixed-top navbar-expand-lg  navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-       
-          <ul class="nav nav-pills ativo" id="mainNav">
-            <li><a class="ativo" href="#pao1">Oferta do dia </a></li>
-            <li><a class="ativo" href="#pao2">Pedidos </a></li>
-            <li><a class="ativo" href="#pao3">Sobre Nós </a></li>
-            <li><a class="ativo" href="#pao4">Contato </a></li>
-          </ul>
-      </nav>
-    </header> -->
+    
 
-            <!--Header-->
-            <header id="header" class="header-effect-reveal" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'reveal', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 200, 'stickySetTop': '-45px'}">
-              <div class="header-body">
-                  <div class="header-container container">
-                      <div class="header-row">
-                          <div class="header-column">
-                              <div class="header-row">
-                                    <a href="index.html">
-                                        <img alt="Vertex" width="215" height="63" data-sticky-width="215" data-sticky-height="63" data-sticky-top="20" src="img/nome_logo_right.png">
-                                    </a>
-                              </div>
-                          </div>
-                          <div class="header-column justify-content-end">
-                      
-                              <div class="header-row">
-                                  <div class="header-nav header-nav-links order-2 order-lg-1">
-                                      <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
-                                          <nav class="collapse">
-                                            <ul class="nav nav-pills ativo" id="mainNav">
-                                              <li><a class="ativo" href="#pao1">Oferta do dia </a></li>
-                                              <li><a class="ativo" href="#pao2">Pedidos </a></li>
-                                              <li><a class="ativo" href="#pao2">Produtos </a></li>
-                                              <li><a class="ativo" href="#pao3">Sobre Nós </a></li>
-                                              <li><a class="ativo" href="#pao4">Contato </a></li>
-                                            </ul>
-                                          </nav>
-                                      </div>
-                                      
-                                      <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
-                                          <i class="fas fa-bars"></i>
-                                      </button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </header>
-          <!--End Header-->
+  <!-- ########################## Header Início ##########################-->
+  <header id="header" class="header-effect-reveal" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'reveal', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 200, 'stickySetTop': '-45px'}">
+    <div class="header-body">
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-column">
+                    <div class="header-row">
+                          <a href="index.html">
+                              <img alt="Vertex" width="215" height="63" data-sticky-width="215" data-sticky-height="63" data-sticky-top="20" src="img/nome_logo_right.png">
+                          </a>
+                    </div>
+                </div>
+                <div class="header-column justify-content-end">
+            
+                    <div class="header-row">
+                        <div class="header-nav header-nav-links order-2 order-lg-1">
+                            <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+                                <nav class="collapse">
+                                  <ul class="nav nav-pills ativo" id="mainNav">
+                                    <li><a class="ativo" href="#pao1">Oferta do dia </a></li>
+                                    <li><a class="ativo" href="#pao2">Pedidos </a></li>
+                                    <li><a class="ativo" href="#pao3">Produtos </a></li>
+                                    <li><a class="ativo" href="#sobre">Sobre Nós </a></li>
+                                    <li><a class="ativo" href="#contato">Contato </a></li>
+                                  </ul>
+                                </nav>
+                            </div>
+                            
+                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ########################## Header Fim ##########################-->
 
          
-
+ <!-- ########################## Banner Carousel Início ##########################-->
   <section id="pao1">
     <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
       <ol class="carousel-indicators">
@@ -130,24 +117,17 @@
       </a>
     </div>
   </section>
-
+ <!-- ########################## Banner Carousel Fim ##########################-->
     <section id="pao2">
       <div class="container">
-        <h1 id="headline">Countdown to my birthday:</h1>
+        <h1 id="headline">Promoção válida até:</h1>
         <div id="countdown">
           <ul>
-            <li><span id="days"></span>days</li>
-            <li><span itd="hours"></span>Hours</li>
-            <li><span id="minutes"></span>Minutes</li>
-            <li><span id="seconds"></span>Seconds</li>
+            <li><span id="days"></span>dias</li>
+            <li><span id="hours"></span>Horas</li>
+            <li><span id="minutes"></span>Minutos</li>
+            <li><span id="seconds"></span>Segundos</li>
           </ul>
-        </div>
-        <div class="message">
-          <div id="content">
-            <span class="emoji">🥳</span>
-            <span class="emoji">🎉</span>
-            <span class="emoji">🎂</span>
-          </div>
         </div>
       </div>
     </section>
@@ -155,8 +135,7 @@
 
 
 
-    <!-- Slider
-		============================================= -->
+    <!-- ########################## Parallax Início ##########################-->
 		<section id="page-title" class="parallax page-title-dark center" style="background-image: url('img/churrasco_midia1.jpg'); background-size: cover; padding: 200px 0;" data-100-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -100px;">
 
 			<div class="container clearfix" style="z-index: 2">
@@ -168,44 +147,85 @@
 
 			<div class="video-overlay" style="background: rgba(0,0,0,0.55); z-index: 1"></div>
 
-		</section><!-- #page-title end -->
+    </section>
+    <!-- ########################## Parallax Fim ##########################-->
 
-        <section id="pao3">
+    <!-- ########################## Sobre Nós Início ##########################-->
+        <section id="sobre">
           <div class="container">
-              <h1>Sobre nos</h1>
-              <ul>
-                <li>dale</li>
-                <li>dele</li>
-                <li>dole</li>
-                <li>dale</li>
-                <li>dele</li>
-                <li>dole</li>
-              </ul>
+              <h1>Sobre Nós</h1>
+              <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/comida_boa.png" class="img-fluid" alt="Image" width="600">
+                  </div>
+
+                  <div class="col-md-6">
+                    <h2>Nossa História</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laborum omnis dolorum tempore, quaerat nostrum ad eligendi accusamus eos optio blanditiis libero animi. Nemo, quidem qui? Dignissimos nam earum voluptas?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, hic amet pariatur cumque iste voluptatibus consequatur, totam labore, aperiam blanditiis maiores facilis sed nemo vel. Molestias cum reiciendis quisquam reprehenderit!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis amet, magnam cum assumenda ratione voluptatem eos quam aspernatur aliquid minima officiis aperiam magni ea non atque inventore sit excepturi illo.</p>
+                  </div>
+              </div>
+              
           </div>
         </section>
+      <!-- ########################## Sobre Nós Fim ##########################-->
 
-        <section id="pao4">
-          <div class="container">
-              <h1>Contato</h1>
-              <ul>
-                <li>dale</li>
-                <li>dele</li>
-                <li>dole</li>
-                <li>dale</li>
-                <li>dele</li>
-                <li>dole</li>
-              </ul>
-          </div>
-        </section>
-
+      
+      <!-- ########################## Contato Início ##########################-->
         <section id="contato">
           <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.165917571028!2d-52.261724198140946!3d-23.79786071566711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed1147530ed8b3%3A0x3b348391c1b98c17!2sSupermercado%20Vendramini!5e0!3m2!1spt-BR!2sbr!4v1601045810824!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h1>Contato</h1>
+              <div class="row">
+                <div class="col-md-6 col-12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.165917571028!2d-52.261724198140946!3d-23.79786071566711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed1147530ed8b3%3A0x3b348391c1b98c17!2sSupermercado%20Vendramini!5e0!3m2!1spt-BR!2sbr!4v1601045810824!5m2!1spt-BR!2sbr" width="500" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0"></iframe>
+                </div>
+
+                <div class="col-md-6 col-12 formulario"> 
+                  <h2>Quer fazer parte da nossa equipe?</h2>
+                    <h4 class="mb-5">Anexe seu currículo junto a mensagem.</h4>
+
+                    <form action="curriculo.php">
+                      <div class="margin">
+                        <div class="inputGroup">      
+                          <input type="text" required />
+                          <span class="inputBar"></span>
+                          <label>Nome</label>
+                        </div>
+                      
+                        <div class="inputGroup">      
+                          <input type="text" required />
+                          <span class="inputBar"></span>
+                          <label>Email</label>
+                        </div>
+                      
+                        <div class="inputGroup">      
+                          <textarea type="textarea" required></textarea>
+                          <span class="inputBar"></span>
+                          <label>Mensagem</label>
+                        </div>
+
+                        <div class='input-wrapper'>
+                          <label for='input-file'>
+                            Currículo
+                          </label>
+                          <input id='input-file' type='file' value='' />
+                          <span id='file-name'></span>
+                        </div>
+                      
+                        <a class="btn-11" href="#">Enviar</a>
+                      </div>
+
+                    </form>
+
+                </div>
+              </div>
           </div>
         </section>
+    <!-- ########################## Contato Fim ##########################-->
 
-
-    <!-- ============================ Footer Start ================================== -->
+    <!-- ########################## Footer Início ##########################-->
       <footer class="dark-footer skin-dark-footer">
         <div>
           <div class="container">
@@ -299,7 +319,7 @@
           </div>
         </div>
       </footer>
-    <!-- ============================ Footer End ================================== -->
+    <!-- ########################## Footer Fim ##########################-->
     
     <a id="back2Top" class="top-scroll" title="Back to top" href="#"><i class="fas fa-arrow-up"></i></a>
     <!-- Optional JavaScript -->
