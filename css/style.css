@@ -9,7 +9,27 @@ body {
 	color: #FFF;
 	text-shadow: none;
 }
-
+.center{
+  text-align: center !important;
+}
+.right{
+  text-align: right !important;
+}
+.left{
+  text-align: left !important;
+}
+.titulo{
+  text-align: center;
+}
+.btn-estilo{
+  background:  #ed1b23;
+	color: #FFF;
+}
+.btn-estilo:hover{
+  background:  #FFF;
+  color: #ed1b23;
+  border: 1px solid #ed1b23;
+}
 /*---------- Small footer -------------------*/
 footer{
 	z-index:99;

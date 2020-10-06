@@ -46,7 +46,7 @@
                             <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                   <ul class="nav nav-pills ativo" id="mainNav">
-                                    <li><a class="ativo" href="#pao1">Oferta do dia </a></li>
+                                    <li><a class="ativo" href="#ofertas">Ofertas do dia </a></li>
                                     <li><a class="ativo" href="#pao2">Pedidos </a></li>
                                     <li><a class="ativo" href="#pao3">Produtos </a></li>
                                     <li><a class="ativo" href="#sobre">Sobre Nós </a></li>
@@ -118,17 +118,25 @@
     </div>
   </section>
  <!-- ########################## Banner Carousel Fim ##########################-->
-    <section id="pao2">
+    <section class="pb-5" id="ofertas">
       <div class="container">
-        <h1 id="headline">Promoção válida até:</h1>
+        <h1 class="titulo">Ofertas do dia</h1>
+        <div class="row"> 
+          <div class="col-md-4">
+              <img src="img/img-carro.jpg" alt="carro" width="350">
+              <button type="button" class="btn btn-estilo">Danger</button>
+          </div>
+        </div>
         <div id="countdown">
           <ul>
-            <li><span id="days"></span>dias</li>
-            <li><span id="hours"></span>Horas</li>
-            <li><span id="minutes"></span>Minutos</li>
-            <li><span id="seconds"></span>Segundos</li>
+            <li><span id="days"></span> Dias</li>
+            <li><span id="hours"></span> Horas</li>
+            <li><span id="minutes"></span> Minutos</li>
+            <li><span id="seconds"></span> Segundos</li>
           </ul>
+         
         </div>
+       
       </div>
     </section>
 
@@ -136,7 +144,7 @@
 
 
     <!-- ########################## Parallax Início ##########################-->
-		<section id="page-title" class="parallax page-title-dark center" style="background-image: url('img/churrasco_midia1.jpg'); background-size: cover; padding: 200px 0;" data-100-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -100px;">
+		<section id="page-title" class="parallax page-title-dark center pt-5" style="background-image: url('img/churrasco_midia1.jpg'); background-size: cover; padding: 200px 0;" data-100-bottom-top="background-position:0px 100px;" data-top-bottom="background-position:0px -100px;">
 
 			<div class="container clearfix" style="z-index: 2">
 				<div class="emphasis-title">
@@ -153,10 +161,10 @@
     <!-- ########################## Sobre Nós Início ##########################-->
         <section id="sobre">
           <div class="container">
-              <h1>Sobre Nós</h1>
+              <h1 class="titulo">Sobre Nós</h1>
               <div class="row">
                   <div class="col-md-6">
-                    <img src="img/comida_boa.png" class="img-fluid" alt="Image" width="600">
+                    <img src="img/foto_frente_mercado.jpeg" class="img-fluid" alt="Image" width="600">
                   </div>
 
                   <div class="col-md-6">
@@ -176,7 +184,7 @@
       <!-- ########################## Contato Início ##########################-->
         <section id="contato">
           <div class="container">
-            <h1>Contato</h1>
+            <h1 class="titulo">Contato</h1>
               <div class="row">
                 <div class="col-md-6 col-12">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7301.165917571028!2d-52.261724198140946!3d-23.79786071566711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed1147530ed8b3%3A0x3b348391c1b98c17!2sSupermercado%20Vendramini!5e0!3m2!1spt-BR!2sbr!4v1601045810824!5m2!1spt-BR!2sbr" width="500" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="true" tabindex="0"></iframe>
@@ -187,7 +195,7 @@
                     <h4 class="mb-5">Anexe seu currículo junto a mensagem.</h4>
 
                     <form action="curriculo.php">
-                      <div class="margin">
+                      <div class="container margin ">
                         <div class="inputGroup">      
                           <input type="text" required />
                           <span class="inputBar"></span>
@@ -214,7 +222,7 @@
                           <span id='file-name'></span>
                         </div>
                       
-                        <a class="btn-11" href="#">Enviar</a>
+                        <a class="btn-11 center" href="#">Enviar</a>
                       </div>
 
                     </form>
