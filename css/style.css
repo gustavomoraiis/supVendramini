@@ -3,6 +3,9 @@ body {
 	color: #555;
 	font-family: 'Lato', sans-serif;
 }
+section{
+  padding: 40px 0px;
+}
 
 ::selection {
 	background:  #ed1b23;
@@ -20,17 +23,36 @@ body {
 }
 .titulo{
   text-align: center;
+  color: #1f1e1e;
 }
 .btn-estilo{
   background:  #ed1b23;
-	color: #FFF;
+  color: #FFF ;
+  
+  transition: all ease 0.4s;
 }
 .btn-estilo:hover{
   background:  #FFF;
   color: #ed1b23;
   border: 1px solid #ed1b23;
+  transition: all ease 0.4s;
+}
+.btn-estilo a{
+  text-decoration: none !important;
+}
+/*---------- Contador -------------------*/
+#countdown li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
 }
 
+#countdown li span {
+  display: block;
+  font-size: 4.5rem;
+}
 /*---------- Small footer -------------------*/
 footer{
 	z-index:99;
@@ -480,7 +502,7 @@ footer a:hover, a:focus{
   .inputGroup label {
     position: absolute;
     top: 0;
-    left: 5px;
+    left: 20%;
     pointer-events: none;
     transition: all 0.3s ease;
     font-size: 16px;
@@ -492,7 +514,7 @@ footer a:hover, a:focus{
   
   .inputGroup input,
   .inputGroup textarea {
-    display: block;
+    /* display: block; */
     width: 280px;
     border: none;
     border-bottom: 1px solid  #1f1e1e;
@@ -578,15 +600,16 @@ footer a:hover, a:focus{
  /*--- BOTÃO ---*/
  [class^="btn-"] {
     position: relative;
-    display: block;
+    /* display: block; */
     overflow: hidden;
     width: 100%;
     height: 50px;
     max-width: 250px;
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     text-transform: uppercase;
     border: 1px solid currentColor;
     transition: all ease 0.4s;
+    text-align: center;
   }
   html *:after {
     box-sizing: border-box;
@@ -657,6 +680,10 @@ footer a:hover, a:focus{
   .btn-11 {
     position: absolute;
     color:  #ed1b23;
+    text-decoration: none !important;
+    line-height: 50px;
+    margin-left: -12%;
+
   }
   .btn-11:before, .btn-11:after {
     position: absolute;
