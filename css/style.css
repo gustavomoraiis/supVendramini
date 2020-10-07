@@ -51,7 +51,7 @@ section{
 
 #countdown li span {
   display: block;
-  font-size: 4.5rem;
+  font-size: 23px;
 }
 /*---------- Small footer -------------------*/
 footer{
@@ -722,4 +722,13 @@ footer a:hover, a:focus{
   *:before,
 *:after {
   z-index: -1;
+}
+
+.produto-borda{
+  border-radius: 20px;
+  border: 2px solid #2e3094;
+}
+.produto-box{
+  /* border: 1px solid #ef1523;
+  border-radius: 20px; */
 }
