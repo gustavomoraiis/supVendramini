@@ -43,15 +43,22 @@ section{
 /*---------- Contador -------------------*/
 #countdown li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 13px;
   list-style-type: none;
-  padding: 1em;
+  padding: 2px;
   text-transform: uppercase;
 }
 
 #countdown li span {
   display: block;
-  font-size: 23px;
+  font-size: 13px;
+}
+#countdown ul{
+  padding: 0px;
+}
+#countdown{
+  background-color: #2e3094 ;
+  color: white;
 }
 /*---------- Small footer -------------------*/
 footer{
@@ -726,9 +733,30 @@ footer a:hover, a:focus{
 
 .produto-borda{
   border-radius: 20px;
-  border: 2px solid #2e3094;
+  /* border: 2px solid #2e3094; */
 }
 .produto-box{
-  /* border: 1px solid #ef1523;
-  border-radius: 20px; */
+  /* border: 1px solid #ef1523; */
+  border-radius: 20px; 
+  background-color: #FFF;
+  padding: 10px 3px;
+  -webkit-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+}
+
+.produto-box span{
+  font-size: 23px;
+}
+
+/* Zoom In #1 */
+.produto-box img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.produto-box img:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
