@@ -49,7 +49,7 @@ function scrollFooter(scrollY, heightFooter)
           hour = minute * 60,
           day = hour * 24;
   
-    let birthday = "Sep 30, 2021 00:00:00",
+    let birthday = "Oct 27, 2020 00:00:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function() {    
   
