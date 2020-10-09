@@ -416,10 +416,29 @@ footer a:hover, a:focus{
 .bottommargin-lg { margin-bottom: 5rem !important; }
 
 
+
+
+.link-1 {
+  transition: 0.3s ease;
+  background: #fff;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+.link-1:hover {
+  border-top: 4px solid #ef1523;
+  border-bottom: 4px solid #ef1523;
+  padding: 6px 0; 
+}
  /* MENU */
  a:active { 
      outline: none; 
      color: #ef1523 !important
+     
     }
 
  .ativo:hover{
