@@ -430,7 +430,7 @@ footer a:hover, a:focus{
   margin: 0 20px;
 }
 .link-1:hover {
-  border-top: 4px solid #ef1523;
+  /* border-top: 2px solid #ef1523; */
   border-bottom: 4px solid #ef1523;
   padding: 6px 0; 
 }
@@ -452,6 +452,9 @@ footer a:hover, a:focus{
 
 #header .header-body{
     position: fixed;
+    -webkit-box-shadow: 0px -6px 23px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -6px 23px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px -6px 23px 2px rgba(0,0,0,0.75);
 }
 
 /*====================================
