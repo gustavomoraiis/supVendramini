@@ -54,6 +54,11 @@ h2.background span {
   background: #fff;
   padding: 0 15px;
 }
+h2.cinza span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #f7f7f7 !important;
+ 
+}
 h2.double:before {
   /* this is just to undo the :before styling from above */
   border-top: none;
@@ -72,6 +77,10 @@ h2.double:after {
   right: 0;
   width: 95%;
   z-index: -1;
+}
+.cinza{
+  background-color: #f7f7f7 !important;
+ 
 }
 .btn-estilo{
   background:  #ed1b23;
@@ -833,3 +842,39 @@ footer a:hover, a:focus{
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
 }
+
+ /* CARROUSEL */
+ .carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+

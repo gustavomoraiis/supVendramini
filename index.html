@@ -118,27 +118,43 @@
     </div>
   </section>
  <!-- ####### Banner Carousel Fim #######-->
-    <section id="ofertas" style="background-color: #f7f7f7;">
+    <section id="ofertas" class="cinza">
       <div class="container">
         <!-- <h1 class="titulo">Ofertas do dia</h1> -->
-        <h2 class="background double"><span>Ofertas do dia</span></h2>
-       
+        <h2 class="background double cinza"><span>Ofertas do dia</span></h2>
+        
+        <!-- <div class="carousel-wrap">
+          <div class="owl-carousel">
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+            <div class="item"><img src="http://placehold.it/150x150"></div>
+          </div>
+        </div> -->
+
+        
        
         <div class="row">
-          <div class="col-md-3 center produto-box">
+          <div class="col-md-3 col-sm-6 col-12 center produto-box ">
             <img class="produto-borda" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="200" >
            
-              <div class="row pt-3  "> 
+              <div class="row pt-3 "> 
                 <div class="col-md-12">
                   <div class="center" id="countdown">
                     <span>Oferta expira em:</span>
                     <ul>
-                      
-                    
-                      <li><span id="days"></span>Dias</li>
-                      <li><span id="hours"></span>H</li>
-                      <li><span id="minutes"></span>Min</li>
-                      <li><span id="seconds"></span>Seg</li>
+                      <li><span class="days"></span>Dias</li>
+                      <li><span class="hours"></span>H</li>
+                      <li><span class="minutes"></span>Min</li>
+                      <li><span class="seconds"></span>Seg</li>
                     </ul>
                   </div> 
                   <p>Cerveja Subzero 350ml</p>
@@ -151,7 +167,6 @@
                 </div>
               </div>
           </div>
-
         </div>
         
         
@@ -220,7 +235,7 @@
                   <h2>Quer fazer parte da nossa equipe?</h2>
                     <h4 class="mb-5">Anexe seu currículo junto a mensagem.</h4>
 
-                    <form action="curriculo.php">
+                    <!-- <form action="curriculo.php">
                       <div class="container center">
                         <div class="inputGroup">      
                           <input type="text" required />
@@ -253,7 +268,7 @@
                         
                       </div>
 
-                    </form>
+                    </form> -->
 
                 </div>
               </div>
@@ -365,8 +380,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
     <script src="js/jquery.js"></script>
-    <script src="js/custom.js"></script>
 
+    <script src="js/custom.js"></script>
+    
+    <script src="js/carousel.js"></script>
     <script src="js/slideNav.js"></script>
     <!-- <script src="js/functions.js"></script> -->
 
@@ -376,17 +393,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-rSbLnRCRq-5t0aobBwX--iZqXaTFyjg&callback=initMap">
     </script>
 
-    <script>
-       var nav = new SlideNav({
-	    activeClass: "active",
-	    toggleButtonSelector: false,
-	    toggleBoxSelector: false,
-	    hideAfterSelect: true,
-	    speed: 70,
-	    changeHash: false,
-	    navBoxToggleClass: false
-       });
-    </script>
+   
 
   </body>
 </html>
