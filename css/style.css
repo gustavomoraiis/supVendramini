@@ -6,6 +6,9 @@ body {
 section{
   padding: 40px 0px;
 }
+ul {
+  list-style-type: none;
+}
 
 ::selection {
 	background:  #ed1b23;
@@ -664,11 +667,11 @@ footer a:hover, a:focus{
     left: 50%;
   }
 
-  .formulario a{
+  /* .formulario a{
         text-decoration: none;
         line-height: 50px;
         text-align: center;
-  }
+  } */
   input[type='file'] {
     display: none
   }
@@ -830,6 +833,47 @@ footer a:hover, a:focus{
   -webkit-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
   -moz-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
   box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+}
+
+.box-contato{
+    /* border: 1px solid #ef1523; */
+  border-radius: 20px; 
+  background-color: #FFF;
+  padding: 10px 3px;
+  /* margin: 0px 5px; */
+  -webkit-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  
+}
+
+
+.box-contato:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  
+}
+/* .box-contato i{
+  transition: 0.3s
+}
+.box-contato:hover i{
+  color:#ef1523 ;
+  transition: 0.3s;
+} */
+
+.box-contato a{
+    text-decoration: none !important;
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+    transition: 0.3s
+}
+.box-contato a:hover{
+  color:#ef1523 ;
+  transition: 0.3s;
 }
 
 .produto-box span{
