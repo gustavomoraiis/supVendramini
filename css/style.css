@@ -875,6 +875,13 @@ footer a:hover, a:focus{
   color:#ef1523 ;
   transition: 0.3s;
 }
+.box-wpp{
+  align-items: center;
+}
+.box-wpp p{
+  margin: 0;
+  padding: 0 5px;
+}
 
 .produto-box span{
   font-size: 23px;
@@ -892,7 +899,7 @@ footer a:hover, a:focus{
 	transform: scale(1.3);
 }
 
- /* CARROUSEL */
+ /* #### CARROUSEL #### */
  .carousel-wrap {
   margin: 90px auto;
   padding: 0 5%;
