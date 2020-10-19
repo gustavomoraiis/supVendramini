@@ -835,6 +835,20 @@ footer a:hover, a:focus{
   box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
 }
 
+.produto-box2{
+  border: 1px solid #ef1523;
+  border-radius: 20px; 
+  background-color: #FFF;
+  padding: 10px 3px;  
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.produto-box2:hover{
+  -webkit-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+}
+
 .box-contato{
     /* border: 1px solid #ef1523; */
   border-radius: 20px; 
@@ -899,11 +913,27 @@ footer a:hover, a:focus{
 	transform: scale(1.3);
 }
 
+.produto-box2 span{
+  font-size: 23px;
+}
+
+/* Zoom In #1 */
+.produto-box2 img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.produto-box2 img:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
  /* #### CARROUSEL #### */
  .carousel-wrap {
-  margin: 90px auto;
+  margin: 0px auto 40px auto;
   padding: 0 5%;
-  width: 80%;
+  width: 100%;
   position: relative;
 }
 
@@ -912,18 +942,21 @@ footer a:hover, a:focus{
   position: relative;
   z-index: 100; 
   -webkit-backface-visibility: hidden; 
+  padding: 40px 0px 20px 0px;
 }
 
 /* end fix */
-.owl-nav > div {
-  margin-top: -26px;
+.owl-nav {
+  /* margin-top: -26px;
   position: absolute;
-  top: 50%;
+  top: 50%; */
   color: #cdcbcd;
+  text-align: center;
 }
 
 .owl-nav i {
   font-size: 52px;
+  padding: 0px 40px;
 }
 
 .owl-nav .owl-prev {
