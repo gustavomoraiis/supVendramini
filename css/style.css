@@ -950,20 +950,90 @@ footer a:hover, a:focus{
   /* margin-top: -26px;
   position: absolute;
   top: 50%; */
-  color: #cdcbcd;
+  color:#ef1523 ;
   text-align: center;
+  
 }
+
 
 .owl-nav i {
   font-size: 52px;
-  padding: 0px 40px;
+  padding: 2px 40px;
+  
 }
 
-.owl-nav .owl-prev {
-  left: -30px;
+.owl-prev {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  
+}
+.owl-prev:hover {
+  color: #232323 !important;
 }
 
-.owl-nav .owl-next {
-  right: -30px;
+.owl-next {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.owl-next:hover {
+  color: #232323 !important;
 }
 
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+/* ######### FILTER PRODUTOS ######### */
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* .container {
+  margin-top: 20px;
+  overflow: hidden;
+} */
+
+/* Style the buttons */
+.btn-filtro {
+  border: none;
+  outline: none;
+  padding: 12px 26px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  
+}
+
+.btn-filtro:hover {
+  background-color: #ddd;
+}
+
+.btn-filtro.active {
+  background-color: #666;
+  color: white;
+}
