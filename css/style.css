@@ -903,7 +903,7 @@ footer a:hover, a:focus{
  .carousel-wrap {
   margin: 90px auto;
   padding: 0 5%;
-  width: 80%;
+  width: 100%;
   position: relative;
 }
 
