@@ -15,6 +15,10 @@ ul {
 	color: #FFF;
 	text-shadow: none;
 }
+html{
+	scroll-behavior: smooth;
+ }
+ 
 .center{
   text-align: center !important;
 }
