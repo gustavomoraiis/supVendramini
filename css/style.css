@@ -1096,7 +1096,7 @@ footer a:hover, a:focus{
   text-align: center;
 }
 .count-text {
-  font-size: 13px;
+  font-size: 23px;
   font-weight: normal;
   margin-top: 10px;
   margin-bottom: 0;
@@ -1106,5 +1106,6 @@ footer a:hover, a:focus{
   margin: 0 auto;
   float: none;
   display: table;
-  color: #4ad1e5;
+  color: rgb(46,48,148);
+  color: radial-gradient(circle, rgba(46,48,148,1) 0%, rgba(0,13,131,1) 100%);
 }
