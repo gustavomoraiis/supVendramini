@@ -1040,7 +1040,7 @@ footer a:hover, a:focus{
 
 /* ######### FILTER PRODUTOS ######### */
 .filterDiv {
-  float: left;
+  /* float: left; */
   background-color: #2196F3;
   color: #ffffff;
   width: 100px;
@@ -1051,7 +1051,7 @@ footer a:hover, a:focus{
 }
 
 .show {
-  display: block;
+  display: inline-block;
 }
 
 /* .container {
