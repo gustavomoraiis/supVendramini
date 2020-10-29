@@ -19,6 +19,7 @@ html{
 	scroll-behavior: smooth;
  }
  
+
 .center{
   text-align: center !important;
 }
@@ -875,6 +876,10 @@ footer a:hover, a:focus{
   margin-bottom: 30px;
 }
 
+.produto-interna{
+  width: 200px;
+}
+
 .produto-box2{
   border: 1px solid #ef1523;
   border-radius: 20px; 
@@ -1041,10 +1046,11 @@ footer a:hover, a:focus{
 /* ######### FILTER PRODUTOS ######### */
 .filterDiv {
   /* float: left; */
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
+  /* background-color: #2196F3;
   line-height: 100px;
+  color: #ffffff; */
+  /* width: 200px;
+  height: 200px; */
   text-align: center;
   margin: 2px;
   display: none;
