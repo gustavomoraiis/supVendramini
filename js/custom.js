@@ -21,7 +21,17 @@ $(function() {
 		$("html, body").animate({ scrollTop: 0 }, "slow");
 		return false;
     });
-
+    
+    // function counterup(){
+	// 	if( $('.counter').length ){
+	// 		$('.counter').counterUp({
+	// 			delay: 10,
+	// 			time: 1000
+	// 		});
+	// 	}
+	// }
+    // counterup();
+    
     //  ###### TIMER ######
     
     (function ($) {
