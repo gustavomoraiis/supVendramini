@@ -106,6 +106,22 @@ h2.double:after {
 .btn-estilo a{
   text-decoration: none !important;
 }
+
+.btn-estilo2{
+  background:  #fff;
+  color: #1f1e1e ;
+  
+  transition: all ease 0.4s;
+}
+.btn-estilo2:hover{
+  background:  #FFF;
+  color: #2e3094;
+  border: 1px solid #2e3094;
+  transition: all ease 0.4s;
+}
+.btn-estilo a{
+  text-decoration: none !important;
+}
 /*---------- FadeInUp -------------------*/
 .animatable {
   
