@@ -112,6 +112,7 @@ h2.double:after {
   color: #1f1e1e ;
   
   transition: all ease 0.4s;
+  margin-bottom: 5px;
 }
 .btn-estilo2:hover{
   background:  #FFF;

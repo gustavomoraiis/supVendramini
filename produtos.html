@@ -64,6 +64,11 @@
                                     <li><a class="ativo link-1" href="#sobre">Sobre Nós </a></li>
                                     <li><a class="ativo link-1" href="#contato">Contato </a></li>
                                   </ul>
+                                  <ul class="nav nav-pills menu-cart" id="mainNav">
+                                    <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i> Carrinho (<span class="total-count"></span>)</button>
+                                        <button class="clear-cart btn btn-danger"><i class="fas fa-trash-alt"></i> Limpar Carrinho</button>
+                                    </li>
+                                  </ul>
                                 </nav>
                             </div>
                             
@@ -130,7 +135,31 @@
       </div>
     </section>
   <!-- ####### Banner Carousel Fim #######-->
-  
+
+
+            <!-- Modal Carrinho -->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <table class="show-cart table">
+                      
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
 
   <section>
     <div class="container">
@@ -143,11 +172,11 @@
         <button class="btn btn-estilo2" onclick="filterSelection('bebidas')"> Bebidas</button> 
         <button class="btn btn-estilo2" onclick="filterSelection('hortifruti')"> Hortifruti</button> 
         <button class="btn btn-estilo2" onclick="filterSelection('carnes')"> Carnes,Peixes & Aves</button>
-        <button class="btn" onclick="filterSelection('padaria')"> Padaria</button>  
-        <button class="btn" onclick="filterSelection('alimentosB')"> Alimentos Básicos</button>
-        <button class="btn" onclick="filterSelection('molhos')"> Molhos, Condimentos & Conservas</button>
-        <button class="btn" onclick="filterSelection('frios')"> Frios & Laticínios</button>
-        <button class="btn" onclick="filterSelection('biscoitos')"> Biscoitos & Salgadinhos</button>
+        <button class="btn btn-estilo2" onclick="filterSelection('padaria')"> Padaria</button>  
+        <button class="btn btn-estilo2" onclick="filterSelection('alimentosB')"> Alimentos Básicos</button>
+        <button class="btn btn-estilo2" onclick="filterSelection('molhos')"> Molhos, Condimentos & Conservas</button>
+        <button class="btn btn-estilo2" onclick="filterSelection('frios')"> Frios & Laticínios</button>
+        <button class="btn btn-estilo2" onclick="filterSelection('biscoitos')"> Biscoitos & Salgadinhos</button>
         
         
       </div>
@@ -167,7 +196,9 @@
             <p class="mb-1"><b>R$ <span>1</span>,99</b></p> 
           </div>
           <div class="col-md-12">
-            <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+            <a  data-name="Cerveja_Subzero_350ml" data-price="1.99" class="add-to-cart "> 
+              <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+            </a>
           </div>
         </div>
       </div>
@@ -180,6 +211,7 @@
   </div>
 
   </section>
+
   
  
   <div class="clearfix mt-5 mb-5"></div>
@@ -367,16 +399,17 @@
   
     
     
-    <script src="js/cart.js"></script>
+  
     <!-- <script src="js/custom.js"></script> -->
     <script src="js/slideNav.js"></script>
     <!-- <script src="js/functions.js"></script>
 
-   
-         
     <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-rSbLnRCRq-5t0aobBwX--iZqXaTFyjg&callback=initMap">
     </script> -->
+
+    <script src="js/cart.js"></script>
+
     <script>
           $(window).on('load', function () {
           $('#preloader').delay(350).fadeOut('slow');
