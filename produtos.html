@@ -66,7 +66,7 @@
                                   </ul>
                                   <ul class="nav nav-pills menu-cart" id="mainNav">
                                     <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i> Carrinho (<span class="total-count"></span>)</button>
-                                        <button class="clear-cart btn btn-danger"><i class="fas fa-trash-alt"></i> Limpar Carrinho</button>
+                                        <button class="clear-cart btn btn-danger"><i class="fas fa-trash-alt"></i> Esvaziar</button>
                                     </li>
                                   </ul>
                                 </nav>
@@ -136,13 +136,13 @@
     </section>
   <!-- ####### Banner Carousel Fim #######-->
 
-
+           
             <!-- Modal Carrinho -->
             <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -151,15 +151,20 @@
                     <table class="show-cart table">
                       
                     </table>
-                    <div>Total price: $<span class="total-cart"></span></div>
+                    <div>Valor Total: R$ <span class="total-cart"></span></div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Order now</button>
+                    <span>Confirmação da compra será realizada via WhatsApp, para continuar click em "Confirmar" e aguarde pois será redirecionado automaticamente para o WhatApp.
+                      <br>Para que a compra seja confirmada, apenas envie a mensagem já programada, mas antes verifique se todos os dados estão corretos.
+                    </span>
+                    <p id="demo"></p>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
+                   <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a>
                   </div>
                 </div>
               </div>
             </div> 
+            
 
   <section>
     <div class="container">
@@ -213,10 +218,6 @@
 
   </section>
 
-  <div class="col-6 center">
-    <a href="suite.html" data-offset="70"  data-animate="fadeInUp" data-delay="0.7s" class="btn rounded btn-estilo text-uppercase font-weight-semibold ls1 py-3 px-4">Ver Mais </a>
-  </div>
- 
   <div class="clearfix mt-5 mb-5"></div>
   
 
@@ -399,7 +400,10 @@
       })
     </script>
 
-  
+  <script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.getTime();
+  </script>
     
     
   
