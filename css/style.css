@@ -958,7 +958,22 @@ footer a:hover, a:focus{
 .cinzel{
   font-family: 'Cinzel', serif !important;
 }
-
+.produto-imagem{
+  /* width: 140px; */
+  height: 140px;
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+  align-self: center;
+}
+.produto-imagem img{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+  width: 70%;
+}
 .produto-borda{
   border-radius: 20px;
   /* border: 2px solid #2e3094; */
@@ -1069,8 +1084,8 @@ footer a:hover, a:focus{
 	transition: .3s ease-in-out;
 }
 .produto-box2 img:hover {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.2);
 }
 
  /* #### CARROUSEL #### */
@@ -1151,7 +1166,7 @@ footer a:hover, a:focus{
   /* width: 200px;
   height: 200px; */
   text-align: center;
-  margin: 2px;
+  margin-bottom: 15px;
   display: none;
 }
 
