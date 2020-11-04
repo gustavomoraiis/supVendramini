@@ -138,8 +138,8 @@
 
            
             <!-- Modal Carrinho -->
-            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
+            <div class="modal fade bd-example-modal-xl" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
@@ -157,9 +157,11 @@
                     <span>Confirmação da compra será realizada via WhatsApp, para continuar click em "Confirmar" e aguarde pois será redirecionado automaticamente para o WhatApp.
                       <br>Para que a compra seja confirmada, apenas envie a mensagem já programada, mas antes verifique se todos os dados estão corretos.
                     </span>
-                    <p id="demo"></p>
+                    <!-- <p id="demo"></p> -->
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
-                   <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a>
+                    <div class="modal-footer btn-wpp">
+                      <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a> -->
+                    </div>
                   </div>
                 </div>
               </div>

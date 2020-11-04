@@ -155,12 +155,21 @@ var shoppingCart = (function() {
   });
   
   
+  
   function displayCart() {
+    
+    var d = new Date();
+    var protocolo = d.getTime();
+    var data_atual = d.getTimezoneOffset();
     var cartArray = shoppingCart.listCart();
     var output = "";
+    var wpp = "";
+    var nome_new = "";
     for(var i in cartArray) {
+      var nome_old = cartArray[i].name;
+      var nome_new = nome_old.replace(/_/g, " ");
       output += "<tr>"
-        + "<td>" + cartArray[i].name + "</td>" 
+        + "<td>" + nome_new + "</td>" 
         + "<td>(R$ " + cartArray[i].price + ")</td>"
         + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
         + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
@@ -169,7 +178,13 @@ var shoppingCart = (function() {
         + " = " 
         + "<td>R$ " + cartArray[i].total + "</td>" 
         +  "</tr>";
+
+        
     }
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+data_atual+"%0a"+nome_new+"'>"
+        + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
+        +  "</a>";
+    $('.btn-wpp').html(wpp);
     $('.show-cart').html(output);
     $('.total-cart').html(shoppingCart.totalCart());
     $('.total-count').html(shoppingCart.totalCount());
