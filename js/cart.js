@@ -160,7 +160,10 @@ var shoppingCart = (function() {
     
     var d = new Date();
     var protocolo = d.getTime();
-    var data_atual = d.getTimezoneOffset();
+    var dia = d.getDate();
+    var mes = d.getMonth();
+    var mes = mes + 1;
+    var ano = d.getFullYear();
     var cartArray = shoppingCart.listCart();
     var output = "";
     var wpp = "";
@@ -181,7 +184,7 @@ var shoppingCart = (function() {
 
         
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+data_atual+"%0a"+nome_new+"'>"
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+"%0aProdutos%3A%20%0a"+nome_new+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);
