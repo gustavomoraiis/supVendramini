@@ -184,7 +184,7 @@ var shoppingCart = (function() {
 
         
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+"%0aProdutos%3A%20%0a"+nome_new+"'>"
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+"%0aProdutos%3A%20%0a"+nome_new+"Valor%3A%20"+cartArray[i].count+"%0aValor%20Total%3A%20R%24%20"+cartArray[i].total+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);

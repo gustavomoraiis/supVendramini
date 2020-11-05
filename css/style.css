@@ -960,7 +960,7 @@ footer a:hover, a:focus{
 }
 .produto-imagem{
   /* width: 140px; */
-  height: 140px;
+  height: 240px;
   min-height: 10em;
   display: table-cell;
   vertical-align: middle;

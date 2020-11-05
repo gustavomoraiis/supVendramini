@@ -140,6 +140,7 @@
             <!-- Modal Carrinho -->
             <div class="modal fade bd-example-modal-xl" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-xl" role="document">
+                
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
@@ -154,6 +155,46 @@
                     <div>Valor Total: R$ <span class="total-cart"></span></div>
                   </div>
                   <div class="modal-footer">
+                    <div class="container">
+                      <form>
+                       <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputAddress">Nome</label>
+                          <input type="text" class="form-control" id="inputNome" placeholder="">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputAddress2">Endereço</label>
+                          <input type="text" class="form-control" id="inputEndereco" placeholder="">
+                        </div>
+                       </div>
+                       
+                        <div class="form-row">
+                          <div class="form-group col-md-4">
+                            <label for="inputCity">Telefone</label>
+                            <input type="text" class="form-control" id="inputTelefone">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputRetirada">Retirada</label>
+                            <select id="inputRetirada" class="form-control">
+                              <option selected>Mercado</option>
+                              <option>Delivery</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="inputRetirada">Forma de Pagamento</label>
+                            <select id="inputRetirada" class="form-control">
+                              <option selected>Cartão</option>
+                              <option>Dinheiro</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="right">
+                          <button type="submit" class="btn btn-primary">Salvar</button>
+                        </div>
+                       
+                      </form>
+                    </div>
+                    
                     <span>Confirmação da compra será realizada via WhatsApp, para continuar click em "Confirmar" e aguarde pois será redirecionado automaticamente para o WhatApp.
                       <br>Para que a compra seja confirmada, apenas envie a mensagem já programada, mas antes verifique se todos os dados estão corretos.
                     </span>
@@ -225,6 +266,63 @@
             </div>
             <div class="col-md-12">
               <a  data-name="Banana_Prata_KG" data-price="1.25" class="add-to-cart "> 
+                <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filterDiv carnes col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="produto-box2">
+          <div class="produto-imagem">
+            <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Bacalhau.png" alt="Banana Prata" width="100">
+          </div>
+          <div class="row pt-1 "> 
+            <div class="col-md-12">
+              <p class="mb-1">Banana Prata KG</p>
+              <p class="mb-1"><b>R$ <span>1</span>,25</b></p> 
+            </div>
+            <div class="col-md-12">
+              <a  data-name="Bacalhau" data-price="1.25" class="add-to-cart "> 
+                <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filterDiv higiene col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="produto-box2">
+          <div class="produto-imagem">
+            <img class="produto-borda img-fluid" src="img/produtos/higiene/Papel_Higiênico_Duetto_Folha_Dupla_Perfumado_Pacote_8_Rolos_30M_X_10Cm.png" alt="Banana Prata" width="100">
+          </div>
+          <div class="row pt-1 "> 
+            <div class="col-md-12">
+              <p class="mb-1">Banana Prata KG</p>
+              <p class="mb-1"><b>R$ <span>1</span>,25</b></p> 
+            </div>
+            <div class="col-md-12">
+              <a  data-name="Bacalhau" data-price="1.25" class="add-to-cart "> 
+                <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filterDiv higiene col-6 col-sm-6 col-md-4 col-lg-3">
+        <div class="produto-box2">
+          <div class="produto-imagem">
+            <img class="produto-borda img-fluid" src="img/produtos/Hortifruti/Goiaba.png" alt="Banana Prata" width="100">
+          </div>
+          <div class="row pt-1 "> 
+            <div class="col-md-12">
+              <p class="mb-1">Banana Prata KG</p>
+              <p class="mb-1"><b>R$ <span>1</span>,25</b></p> 
+            </div>
+            <div class="col-md-12">
+              <a  data-name="Bacalhau" data-price="1.25" class="add-to-cart "> 
                 <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
               </a>
             </div>
