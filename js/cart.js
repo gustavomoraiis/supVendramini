@@ -171,13 +171,15 @@ var shoppingCart = (function() {
     var wpp = "";
     var nome_new = "";
     
+    
     for(var i in cartArray) {
       const nome_wpp = [cartArray[i].name, cartArray[i].price];
-      var teste = (nome_wpp.join('%0a'));
+      var teste = (nome_wpp.join('%20-%20Valor%3A%20%20R$'));
+      var teste = teste.replace(/_/g, " ");
       var nome_old = cartArray[i].name;
       var nome_new = nome_old.replace(/_/g, " ");
       output += "<tr>"
-        + "<td>" + nome_new + " " + teste + "</td>" 
+        + "<td>" + nome_new + " " + teste + " </td>" 
         + "<td>(R$ " + cartArray[i].price + ")</td>"
         + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
         + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
@@ -189,7 +191,7 @@ var shoppingCart = (function() {
 
         
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+"%0aProdutos%3A%20%0a"+nome_new+"Valor%3A%20"+cartArray[i].count+"%0aValor%20Total%3A%20R%24%20"+cartArray[i].total+"'>"
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+"%0aProdutos%3A%20%0a"+teste+"%0aValor%20Total%3A%20R%24%20"+cartArray[i].total+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);
