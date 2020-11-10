@@ -154,10 +154,12 @@ var shoppingCart = (function() {
     displayCart();
   });
   
-  
+
   
   function displayCart() {
-    
+    const elements = ['Fire', 'Air', 'Water'];
+    var acd = (elements.join('-'));
+// expected output: "Fire-Air-Water"
     var d = new Date();
     var protocolo = d.getTime();
     var dia = d.getDate();
@@ -168,11 +170,14 @@ var shoppingCart = (function() {
     var output = "";
     var wpp = "";
     var nome_new = "";
+    
     for(var i in cartArray) {
+      const nome_wpp = [cartArray[i].name, cartArray[i].price];
+      var teste = (nome_wpp.join('%0a'));
       var nome_old = cartArray[i].name;
       var nome_new = nome_old.replace(/_/g, " ");
       output += "<tr>"
-        + "<td>" + nome_new + "</td>" 
+        + "<td>" + nome_new + " " + teste + "</td>" 
         + "<td>(R$ " + cartArray[i].price + ")</td>"
         + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
         + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
