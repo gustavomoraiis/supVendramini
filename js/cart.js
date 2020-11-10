@@ -202,7 +202,6 @@ var shoppingCart = (function() {
   }
   
   // Delete item button
-  
   $('.show-cart').on("click", ".delete-item", function(event) {
     var name = $(this).data('name')
     shoppingCart.removeItemFromCartAll(name);
