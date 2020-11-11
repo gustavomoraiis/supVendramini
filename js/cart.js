@@ -176,7 +176,6 @@ var shoppingCart = (function() {
     for(var i in cartArray) {
       const nome_wpp = [cartArray[i].name, cartArray[i].price];
       var teste = (nome_wpp.join('%20-%20Valor%3A%20%20R$'));
-      
       // const teste2 = [teste ,'Qtd', cartArray[i].count];
       teste = teste.replace(/_/g, " ");
       produtos.push(teste);
