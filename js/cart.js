@@ -177,8 +177,10 @@ var shoppingCart = (function() {
     for(var i in cartArray) {
       const nome_qtd = [cartArray[i].name, cartArray[i].count];
       var teste = (nome_qtd.join('%20*%7C%7C*%20Qtd%3A%20%20'));
-      const nome_qtd_valor = [teste, cartArray[i].price];
-      var produtos_old = (nome_qtd_valor.join('%20*%7C%7C*%20Valor%20Uni%3A%20%20R$'));
+      const nome_qtd_valorUni = [teste, cartArray[i].price];
+      var produtos_old = (nome_qtd_valorUni.join('%20*%7C%7C*%20Valor%20Uni%3A%20%20R$'));
+      const nome_qtd_valorUni_valorGeral = [produtos_old,  cartArray[i].total];
+      var produtos_old = (nome_qtd_valorUni_valorGeral.join('%20*%7C%7C*%20Valor%3A%20%20R$'));
       produtos_old = produtos_old.replace(/_/g, " ");
       produtos.push(produtos_old);
       var nome_old = cartArray[i].name;
@@ -197,7 +199,7 @@ var shoppingCart = (function() {
 
         total += parseFloat(cartArray[i].total); 
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+""+linha+"*PRODUTOS%3A*%20%0a"+produtos.join("%0a")+""+linha+"Valor%20Total%3A%20R%24%20"+total+"'>"
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+""+linha+"*PRODUTOS%3A*%20%0a"+produtos.join("%0a%0a")+""+linha+"Valor%20Total%3A%20R%24%20"+total+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);
