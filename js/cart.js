@@ -170,31 +170,34 @@ var shoppingCart = (function() {
     var wpp = "";
     var nome_new = "";
     var teste = "";
+    var produtos_old = "";
     var produtos = [];
     var total = 0;
     var linha = "%0a%0a%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0a%0a";
     for(var i in cartArray) {
-      const nome_wpp = [cartArray[i].name, cartArray[i].price];
-      var teste = (nome_wpp.join('%20-%20Valor%3A%20%20R$'));
-      // const teste2 = [teste ,'Qtd', cartArray[i].count];
-      teste = teste.replace(/_/g, " ");
-      produtos.push(teste);
+      const nome_qtd = [cartArray[i].name, cartArray[i].count];
+      var teste = (nome_qtd.join('%20*%7C%7C*%20Qtd%3A%20%20'));
+      const nome_qtd_valor = [teste, cartArray[i].price];
+      var produtos_old = (nome_qtd_valor.join('%20*%7C%7C*%20Valor%20Uni%3A%20%20R$'));
+      produtos_old = produtos_old.replace(/_/g, " ");
+      produtos.push(produtos_old);
       var nome_old = cartArray[i].name;
       var nome_new = nome_old.replace(/_/g, " ");
-      output += "<tr>"
-        + "<td>" + nome_new + " "+produtos+" </td>" 
-        + "<td>(R$ " + cartArray[i].price + ")</td>"
-        + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+      output += "<tr class'row'>"
+        + "<td class=''>" + nome_new + "</td>" 
+        + "<td class=''>(R$ " + cartArray[i].price + ")</td>"
+        + "<td class=''><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
         + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
         + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
-        + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+       
+        + "<td class=''><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
         + " = " 
-        + "<td>R$ " + cartArray[i].total + "</td>" 
+        + "<td class=''>R$ " + cartArray[i].total + "</td>" 
         +  "</tr>";
 
         total += parseFloat(cartArray[i].total); 
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+"%0aProdutos%3A%20%0a"+produtos.join("%0a")+""+linha+"Valor%20Total%3A%20R%24%20"+total+"'>"
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+""+linha+"*PRODUTOS%3A*%20%0a"+produtos.join("%0a")+""+linha+"Valor%20Total%3A%20R%24%20"+total+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);
