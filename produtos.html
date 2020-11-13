@@ -190,7 +190,8 @@
                           </div>
                         </div>
                         <div class="right">
-                          <button type="submit" id="salvar" class="btn btn-primary">Salvar</button>
+                          <p id="demo"></p>
+                          <button class="btn btn-primary" onclick="myFunction()">Try it</button>
                         </div>
                        
                       </form>
@@ -211,9 +212,11 @@
             
   <section>
     <div class="container">
-      <input id="pergunta1">
+     
 
-      <button>Chutar!</button>
+      <input type="text" class="form-control" id="inputNome" placeholder="">
+      <button onclick="myFunction()">Try it</button>
+      <p id="demo"></p>
       <h2 class="background double"><span>Produtos</span></h2>
       
 
@@ -547,6 +550,13 @@
     })
      </script>
    
+   <script>
+      function myFunction() {
+    var x = "";
+    var x = document.getElementById("inputNome").value;
+    document.getElementById("demo").innerHTML = x;
+  }
+   </script>
 
   </body>
 </html>

@@ -154,13 +154,11 @@ var shoppingCart = (function() {
     displayCart();
   });
   
-var pergunta1 = '';
-var button = document.querySelector("#salvar");
-button.onclick = function() {
-    pergunta1 = document.querySelector("#inputNome");
-  // alert(pergunta1.value);
-}
-
+  // function myFunction() {
+  //   var x = "";
+  //   var x = document.getElementById("inputNome").value;
+  //   document.getElementById("demo").innerHTML = x;
+  // }
   
   function displayCart() {
     
@@ -196,7 +194,7 @@ button.onclick = function() {
     var total = 0;
     var linha = "%0a%0a%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0a%0a";
 
-    var c_nome_var = pergunta1.value;
+    var c_nome_var = "Dale";
     const c_nome_old = ['Nome', c_nome_var];
     var c_nome = (c_nome_old.join('%3A%20'));
 
