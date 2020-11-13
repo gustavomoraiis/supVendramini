@@ -156,21 +156,23 @@
                   </div>
                   <div class="modal-footer">
                     <div class="container">
-                      <form>
+                      <form onsubmit="return false">
                        <div class="form-row">
-                        <div class="form-group col-12 col-md-6">
-                          <label for="inputNome">Nome</label>
+                        <div class="form-group col-12 col-md-12">
+                          <label for="inputNome"><b>Nome Completo</b></label>
                           <input type="text" class="form-control" id="inputNome" placeholder="">
                         </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputLogradouro">Logradouro</label>
+                        <div class="form-group col-12 col-md-12">
+                          <label for="inputLogradouro"><b>Logradouro</b></label>
+                          <p>(Por gentileza, inserir todos os dados do logradouro.<br>
+                            Ex:'Av. Vicente Machado, n° 183, Centro, Engenheiro Beltrão - PR')</p>
                           <input type="text" class="form-control" id="inputLogradouro" placeholder="">
                         </div>
                        </div>
                        
                         <div class="form-row">
                           <div class="form-group col-12 col-md-4">
-                            <label for="inputCity">Telefone</label>
+                            <label for="inputTelefone">Telefone</label>
                             <input type="text" class="form-control" id="inputTelefone">
                           </div>
                           <div class="form-group col-12 col-md-4">
@@ -189,7 +191,8 @@
                           </div>
                         </div>
                         <div class="right">
-                          <button type="submit" class="btn btn-primary">Salvar</button>
+                          <!-- <button type="submit" class="btn btn-primary">Salvar</button> -->
+                          <button  class="btn btn-primary" onclick="displayCart()">Salvar</button>
                         </div>
                        
                       </form>
@@ -210,6 +213,14 @@
             
   <section>
     <div class="container">
+      <!-- <form id="frm1" action="/action_page.php">
+        <button id="btn1" name="subject" type="submit" value="fav_HTML">HTML</button>
+        <button id="btn2" name="subject" type="submit" value="fav_CSS">CSS</button>
+        <input type="text" class="form-control" id="inputNome2" placeholder="">
+        </form>
+        <button class="btn btn-primary" onclick="displayCart()">Try it</button>
+        <p id="demo"></p> -->
+       
       <h2 class="background double"><span>Produtos</span></h2>
       
 

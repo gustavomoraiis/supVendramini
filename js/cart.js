@@ -154,10 +154,13 @@ var shoppingCart = (function() {
     displayCart();
   });
   
-
+  function myFunction() {
+    
+  }
   
   function displayCart() {
-    
+    // var inputNome = document.getElementById("inputNome").value;
+    // document.getElementById("demo").innerHTML =  nome_cliente;
 
     var d = new Date();
     var protocolo = d.getTime();
@@ -190,23 +193,23 @@ var shoppingCart = (function() {
     var total = 0;
     var linha = "%0a%0a%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0a%0a";
 
-    var c_nome_var = "Pedro João";
+    var c_nome_var =  document.getElementById("inputNome").value;
     const c_nome_old = ['Nome', c_nome_var];
     var c_nome = (c_nome_old.join('%3A%20'));
 
-    var c_logra_var = "Rua Francisco Preiser, 181, Jardim Santa Cruz, Campo Mourão - PR";
+    var c_logra_var = document.getElementById("inputLogradouro").value;
     const c_logra_old = ['Logradouro', c_logra_var];
     var c_logra = (c_logra_old.join('%3A%20'));
 
-    var c_fone_var = "(44) 9 9834-2461";
+    var c_fone_var = document.getElementById("inputTelefone").value;
     const c_fone_old = ['Telefone', c_fone_var];
     var c_fone = (c_fone_old.join('%3A%20'));
 
-    var c_retirada_var = "Mercado";
+    var c_retirada_var = document.getElementById("inputRetirada").value;
     const c_retirada_old = ['Retirada', c_retirada_var];
     var c_retirada = (c_retirada_old.join('%3A%20'));
 
-    var c_pag_var = "Cartão";
+    var c_pag_var = document.getElementById("inputPagamento").value;
     const c_pag_old = ['Pagamento', c_pag_var];
     var c_pag = (c_pag_old.join('%3A%20'));
 
