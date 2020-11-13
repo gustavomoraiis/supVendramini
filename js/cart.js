@@ -158,26 +158,65 @@ var shoppingCart = (function() {
   
   function displayCart() {
     
-// expected output: "Fire-Air-Water"
+
     var d = new Date();
     var protocolo = d.getTime();
+
     var dia = d.getDate();
     var mes = d.getMonth();
     var mes = mes + 1;
     var ano = d.getFullYear();
+    var hora = d.getHours();
+    var minutos = d.getMinutes();
+    var segundos = d.getSeconds();
+
+    const data_old1 = [dia, mes, ano];
+    var data_var = (data_old1.join('%2F'));
+    var data_txt = "%0aData";
+    const data_old = [data_txt, data_var];
+    var data_new = (data_old.join('%3A%20'));
+
+    const horas_var = [hora, minutos, segundos];
+    var horas = (horas_var.join('%3A'));
+    const data_horas = [data_new, horas];
+    var data = (data_horas.join('%20-%20'));
+
     var cartArray = shoppingCart.listCart();
     var output = "";
     var wpp = "";
     var nome_new = "";
-    var teste = "";
     var produtos_old = "";
     var produtos = [];
     var total = 0;
     var linha = "%0a%0a%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0a%0a";
+
+    var c_nome_var = "Pedro João";
+    const c_nome_old = ['Nome', c_nome_var];
+    var c_nome = (c_nome_old.join('%3A%20'));
+
+    var c_logra_var = "Rua Francisco Preiser, 181, Jardim Santa Cruz, Campo Mourão - PR";
+    const c_logra_old = ['Logradouro', c_logra_var];
+    var c_logra = (c_logra_old.join('%3A%20'));
+
+    var c_fone_var = "(44) 9 9834-2461";
+    const c_fone_old = ['Telefone', c_fone_var];
+    var c_fone = (c_fone_old.join('%3A%20'));
+
+    var c_retirada_var = "Mercado";
+    const c_retirada_old = ['Retirada', c_retirada_var];
+    var c_retirada = (c_retirada_old.join('%3A%20'));
+
+    var c_pag_var = "Cartão";
+    const c_pag_old = ['Pagamento', c_pag_var];
+    var c_pag = (c_pag_old.join('%3A%20'));
+
+    const dados_cliente_old = [c_nome, c_logra, c_fone, c_retirada, c_pag];
+    var dados_cliente = (dados_cliente_old.join('%0a'));
+
     for(var i in cartArray) {
       const nome_qtd = [cartArray[i].name, cartArray[i].count];
-      var teste = (nome_qtd.join('%20*%7C%7C*%20Qtd%3A%20%20'));
-      const nome_qtd_valorUni = [teste, cartArray[i].price];
+      var produtos_old = (nome_qtd.join('%20*%7C%7C*%20Qtd%3A%20%20'));
+      const nome_qtd_valorUni = [produtos_old, cartArray[i].price];
       var produtos_old = (nome_qtd_valorUni.join('%20*%7C%7C*%20Valor%20Uni%3A%20%20R$'));
       const nome_qtd_valorUni_valorGeral = [produtos_old,  cartArray[i].total];
       var produtos_old = (nome_qtd_valorUni_valorGeral.join('%20*%7C%7C*%20Valor%3A%20%20R$'));
@@ -199,7 +238,7 @@ var shoppingCart = (function() {
 
         total += parseFloat(cartArray[i].total); 
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+"%0aData%3A%20"+dia+"%2F"+mes+"%2F"+ano+""+linha+"*PRODUTOS%3A*%20%0a"+produtos.join("%0a%0a")+""+linha+"Valor%20Total%3A%20R%24%20"+total+"'>"
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+""+data+""+linha+"*CLIENTE%3A*%20%0a"+dados_cliente+""+linha+"*PRODUTOS%3A*%20%0a"+produtos.join("%0a%0a")+""+linha+"Valor%20Total%3A%20R%24%20"+total+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);
