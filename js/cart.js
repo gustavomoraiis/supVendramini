@@ -164,10 +164,8 @@ var shoppingCart = (function() {
 
     var d = new Date();
     var protocolo = d.getTime();
-
     var dia = d.getDate();
-    var mes = d.getMonth();
-    var mes = mes + 1;
+    var mes = d.getMonth() + 1;
     var ano = d.getFullYear();
     var hora = d.getHours();
     var minutos = d.getMinutes();
