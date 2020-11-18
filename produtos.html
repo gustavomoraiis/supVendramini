@@ -142,15 +142,12 @@
               <div class="modal-dialog modal-xl" role="document">
                 
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <table class="show-cart table">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-cliente" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user"></i> Cliente</a>
+                      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-shopping-cart"></i> Carrinho</a>
                       
+<<<<<<< HEAD
                     </table>
                     <div>Valor Total: R$ <span class="total-cart"></span></div>
                   </div>
@@ -192,31 +189,121 @@
                         <div class="right">
                           <p id="demo"></p>
                           <button class="btn btn-primary" onclick="myFunction()">Try it</button>
+=======
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-cliente" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user"></i> Cliente</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <div class="container">
+                          <form onsubmit="return false">
+                           <div class="form-row">
+                            <div class="form-group col-12 col-md-12">
+                              <label for="inputNome"><b>Nome Completo</b></label>
+                              <input type="text" class="form-control" id="inputNome" placeholder="">
+                            </div>
+                            <div class="form-group col-12 col-md-12">
+                              <label for="inputLogradouro"><b>Logradouro</b></label>
+                              <p>(Por gentileza, inserir todos os dados do logradouro.<br>
+                                Ex:'Av. Vicente Machado, n° 183, Centro, Engenheiro Beltrão - PR')</p>
+                              <input type="text" class="form-control" id="inputLogradouro" placeholder="">
+                            </div>
+                           </div>
+                           
+                            <div class="form-row">
+                              <div class="form-group col-12 col-md-4">
+                                <label for="inputTelefone">Telefone</label>
+                                <input type="text" class="form-control" id="inputTelefone">
+                              </div>
+                              <div class="form-group col-12 col-md-4">
+                                <label for="inputRetirada">Retirada</label>
+                                <select id="inputRetirada" class="form-control">
+                                  <option selected>Mercado</option>
+                                  <option>Delivery</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-12 col-md-4">
+                                <label for="inputPagamento">Forma de Pagamento</label>
+                                <select id="inputPagamento" class="form-control">
+                                  <option selected>Cartão</option>
+                                  <option>Dinheiro</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="right">
+                              <!-- <button type="submit" class="btn btn-primary">Salvar</button> -->
+                              <button  class="btn btn-primary" onclick="displayCart()">Salvar</button>
+                            </div>
+                           
+                          </form>
+>>>>>>> fbd1d18f70a9cf8bcf4de5d26419e0ff1150e871
                         </div>
                        
-                      </form>
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
+                        <button type="button" class="btn btn-success">Carrinho <i class="fas fa-arrow-right"></i></button>
+                      </div>
                     </div>
-                    
-                    <span>Confirmação da compra será realizada via WhatsApp, para continuar click em "Confirmar" e aguarde pois será redirecionado automaticamente para o WhatApp.
-                      <br>Para que a compra seja confirmada, apenas envie a mensagem já programada, mas antes verifique se todos os dados estão corretos.
-                    </span>
-                    <!-- <p id="demo"></p> -->
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
-                    <div class="modal-footer btn-wpp">
-                      <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a> -->
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-shopping-cart"></i> Carrinho</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="show-cart table">
+                          
+                        </table>
+                        <div>Valor Total: R$ <span class="total-cart"></span></div>
+                      </div>
+                      <div class="modal-footer">
+                        <span>Confirmação da compra será realizada via WhatsApp, para continuar click em "Confirmar" e aguarde pois será redirecionado automaticamente para o WhatApp.
+                          <br>Para que a compra seja confirmada, apenas envie a mensagem já programada, mas antes verifique se todos os dados estão corretos.
+                        </span>
+                        <!-- <p id="demo"></p> -->
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
+                        <div class="modal-footer btn-wpp">
+                          <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a> -->
+                        </div>
+                      </div>
                     </div>
+                   
                   </div>
+                  
                 </div>
               </div>
             </div> 
             
   <section>
     <div class="container">
+<<<<<<< HEAD
      
 
       <input type="text" class="form-control" id="inputNome" placeholder="">
       <button onclick="myFunction()">Try it</button>
       <p id="demo"></p>
+=======
+      <!-- <form id="frm1" action="/action_page.php">
+        <button id="btn1" name="subject" type="submit" value="fav_HTML">HTML</button>
+        <button id="btn2" name="subject" type="submit" value="fav_CSS">CSS</button>
+        <input type="text" class="form-control" id="inputNome2" placeholder="">
+        </form>
+        <button class="btn btn-primary" onclick="displayCart()">Try it</button>
+        <p id="demo"></p> -->
+       
+>>>>>>> fbd1d18f70a9cf8bcf4de5d26419e0ff1150e871
       <h2 class="background double"><span>Produtos</span></h2>
       
 
@@ -297,6 +384,142 @@
                 </div>
               </div>
             </div>
+
+            <div class="filterDiv frios col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="produto-box2">
+                <div class="produto-imagem">
+                  <img class="produto-borda img-fluid" src="img/produtos/Frios_laticinios/Margarina_Doriana_com_Sal_500G.png" alt="Margarina Doriana 500GR " width="100">
+                </div>
+                <div class="row pt-1 "> 
+                  <div class="col-md-12">
+                    <p class="mb-1">Margarina Doriana 500g C/Sal</p>
+                    <p class="mb-1"><b>R$ <span>5</span>,59</b></p> 
+                  </div>
+                  <div class="col-md-12">
+                    <a  data-name="Margarina_Doriana_500gr_C_Sal" data-price="5.59" class="add-to-cart "> 
+                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filterDiv higene col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="produto-box2">
+                <div class="produto-imagem">
+                  <img class="produto-borda img-fluid" src="img/produtos/higiene/Absorvente_Intimus_Day_Diário_sem_Perfume_sem_Abas_Oferta_Pacote_40Un.png" alt="Absorvente Intimus 40un" width="100">
+                </div>
+                <div class="row pt-1 "> 
+                  <div class="col-md-12">
+                    <p class="mb-1">Absorvente Intimus Dia Sem Abas 40un</p>
+                    <p class="mb-1"><b>R$ <span>29</span>,99</b></p> 
+                  </div>
+                  <div class="col-md-12">
+                    <a  data-name="Absorvente_Intimus_Dia_Sem_Abas_40un" data-price="29.99" class="add-to-cart "> 
+                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filterDiv molhos col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="produto-box2">
+                <div class="produto-imagem">
+                  <img class="produto-borda img-fluid" src="img/produtos/Molhos_condimentos_conservas/tempero_sazon_amarelo_legumes_60g.png" alt="Tempero Sazon Amarelo Legumes 60g" width="100">
+                </div>
+                <div class="row pt-1 "> 
+                  <div class="col-md-12">
+                    <p class="mb-1">Tempero Sazon Amarelo Legumes 60g</p>
+                    <p class="mb-1"><b>R$ <span>4</span>,99</b></p> 
+                  </div>
+                  <div class="col-md-12">
+                    <a  data-name="Tempero_Sazon_Amerelo_Legumes_60_g" data-price="4.99" class="add-to-cart "> 
+                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filterDiv limpeza col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="produto-box2">
+                <div class="produto-imagem">
+                  <img class="produto-borda img-fluid" src="img/produtos/limpeza/Detergente_Ypê_500ml.png" alt="Detergente Líquido 500ml Ypê Neutro" width="100">
+                </div>
+                <div class="row pt-1 "> 
+                  <div class="col-md-12">
+                    <p class="mb-1">Detergente Líquido 500ml Ypê Neutro</p>
+                    <p class="mb-1"><b>R$ <span>2</span>,15</b></p> 
+                  </div>
+                  <div class="col-md-12">
+                    <a  data-name="Detergente_Líquido_500ml_Ypê_Neutro" data-price="2.15" class="add-to-cart "> 
+                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filterDiv padaria col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="produto-box2">
+                <div class="produto-imagem">
+                  <img class="produto-borda img-fluid" src="img/produtos/Padaria/pão_frances.png" alt="Pão Francês KG" width="100">
+                </div>
+                <div class="row pt-1 "> 
+                  <div class="col-md-12">
+                    <p class="mb-1">Pão Francês KG</p>
+                    <p class="mb-1"><b>R$ <span>11</span>,99</b></p> 
+                  </div>
+                  <div class="col-md-12">
+                    <a  data-name="Pão_Francês_KG" data-price="11.99" class="add-to-cart "> 
+                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="filterDiv biscoitos col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="produto-box2">
+                <div class="produto-imagem">
+                  <img class="produto-borda img-fluid" src="img/produtos/Biscoitos_salgadinhos/Batata_Elma_Chips_Stax_Cheddar_Embalagem_156G.png" alt="Batata Elma Chips Stax Cheddar 156g" width="100">
+                </div>
+                <div class="row pt-1 "> 
+                  <div class="col-md-12">
+                    <p class="mb-1">Batata Elma Chips Stax Cheddar 156g</p>
+                    <p class="mb-1"><b>R$ <span>12</span>,99</b></p> 
+                  </div>
+                  <div class="col-md-12">
+                    <a  data-name="Batata_Elma_Chips_Stax_Cheddar_170g" data-price="12.99" class="add-to-cart "> 
+                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="filterDiv alimentosB col-6 col-sm-6 col-md-4 col-lg-3">
+              <div class="produto-box2">
+                <div class="produto-imagem">
+                  <img class="produto-borda img-fluid" src="img/produtos/aliementos_basicos/Oleo_soja_coamo_900ml.png" alt="Óleo Soja Coamo 900ml" width="100">
+                </div>
+                <div class="row pt-1 "> 
+                  <div class="col-md-12">
+                    <p class="mb-1">Óleo Soja Coamo 900ml</p>
+                    <p class="mb-1"><b>R$ <span>7</span>,29</b></p> 
+                  </div>
+                  <div class="col-md-12">
+                    <a  data-name="Óleo_Soja_Coamo_900ml" data-price="7.29" class="add-to-cart "> 
+                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
 
 
 
