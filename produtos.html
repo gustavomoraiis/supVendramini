@@ -144,52 +144,9 @@
                 <div class="modal-content">
                   <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-cliente" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user"></i> Cliente</a>
-                      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+                      <a class="nav-link nav-link2 active" id="nav-home-tab" data-toggle="tab" href="#nav-cliente" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user"></i> Cliente</a>
+                      <a class="nav-link nav-link2 " id="nav-profile-tab" data-toggle="tab" href="#nav-carrinho" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-shopping-cart"></i> Carrinho</a>
                       
-<<<<<<< HEAD
-                    </table>
-                    <div>Valor Total: R$ <span class="total-cart"></span></div>
-                  </div>
-                  <div class="modal-footer">
-                    <div class="container">
-                      <form>
-                       <div class="form-row">
-                        <div class="form-group col-12 col-md-6">
-                          <label for="inputNome">Nome</label>
-                          <input type="text" class="form-control" id="inputNome" placeholder="">
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label for="inputLogradouro">Logradouro</label>
-                          <input type="text" class="form-control" id="inputLogradouro" placeholder="">
-                        </div>
-                       </div>
-                       
-                        <div class="form-row">
-                          <div class="form-group col-12 col-md-4">
-                            <label for="inputCity">Telefone</label>
-                            <input type="text" class="form-control" id="inputTelefone">
-                          </div>
-                          <div class="form-group col-12 col-md-4">
-                            <label for="inputRetirada">Retirada</label>
-                            <select id="inputRetirada" class="form-control">
-                              <option selected>Mercado</option>
-                              <option>Delivery</option>
-                            </select>
-                          </div>
-                          <div class="form-group col-12 col-md-4">
-                            <label for="inputPagamento">Forma de Pagamento</label>
-                            <select id="inputPagamento" class="form-control">
-                              <option selected>Cartão</option>
-                              <option>Dinheiro</option>
-                            </select>
-                           
-                          </div>
-                        </div>
-                        <div class="right">
-                          <p id="demo"></p>
-                          <button class="btn btn-primary" onclick="myFunction()">Try it</button>
-=======
                     </div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
@@ -240,22 +197,21 @@
                             </div>
                             <div class="right">
                               <!-- <button type="submit" class="btn btn-primary">Salvar</button> -->
-                              <button  class="btn btn-primary" onclick="displayCart()">Salvar</button>
+                              <button class="btn btn-primary" onclick="displayCart()">Salvar</button>
                             </div>
                            
                           </form>
->>>>>>> fbd1d18f70a9cf8bcf4de5d26419e0ff1150e871
                         </div>
                        
                       </div>
                       
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
-                        <button type="button" class="btn btn-success">Carrinho <i class="fas fa-arrow-right"></i></button>
+                        <a id="nav-profile-tab" data-toggle="tab" href="#nav-carrinho" role="tab" aria-controls="nav-profile" aria-selected="false"><button type="button" class="btn btn-primary">Próximo <i class="fas fa-arrow-right"></i></button></a> 
                       </div>
                     </div>
 
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="tab-pane fade" id="nav-carrinho" role="tabpanel" aria-labelledby="nav-profile-tab">
                       <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-shopping-cart"></i> Carrinho</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -274,6 +230,7 @@
                         </span>
                         <!-- <p id="demo"></p> -->
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
+                          <!-- <a id="nav-home-tab" data-toggle="tab" href="#nav-cliente" role="tab" aria-controls="nav-home" aria-selected="true"><button type="button" class="btn btn-primary">Voltar <i class="fas fa-arrow-left"></i></button></a>  -->
                         <div class="modal-footer btn-wpp">
                           <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a> -->
                         </div>
@@ -288,13 +245,6 @@
             
   <section>
     <div class="container">
-<<<<<<< HEAD
-     
-
-      <input type="text" class="form-control" id="inputNome" placeholder="">
-      <button onclick="myFunction()">Try it</button>
-      <p id="demo"></p>
-=======
       <!-- <form id="frm1" action="/action_page.php">
         <button id="btn1" name="subject" type="submit" value="fav_HTML">HTML</button>
         <button id="btn2" name="subject" type="submit" value="fav_CSS">CSS</button>
@@ -303,7 +253,6 @@
         <button class="btn btn-primary" onclick="displayCart()">Try it</button>
         <p id="demo"></p> -->
        
->>>>>>> fbd1d18f70a9cf8bcf4de5d26419e0ff1150e871
       <h2 class="background double"><span>Produtos</span></h2>
       
 
@@ -722,7 +671,7 @@
     
   
     <!-- <script src="js/custom.js"></script> -->
-    <script src="js/slideNav.js"></script>
+    <!-- <script src="js/slideNav.js"></script> -->
     <!-- <script src="js/functions.js"></script>
 
     <script defer

@@ -154,17 +154,9 @@ var shoppingCart = (function() {
     displayCart();
   });
   
-<<<<<<< HEAD
-  // function myFunction() {
-  //   var x = "";
-  //   var x = document.getElementById("inputNome").value;
-  //   document.getElementById("demo").innerHTML = x;
-  // }
-=======
   function myFunction() {
     
   }
->>>>>>> fbd1d18f70a9cf8bcf4de5d26419e0ff1150e871
   
   function displayCart() {
     // var inputNome = document.getElementById("inputNome").value;
@@ -179,7 +171,7 @@ var shoppingCart = (function() {
     var segundos = d.getSeconds();
 
     var protocolo_var = d.getTime();
-    var protocolo_txt = "Protocolo%3A%20";
+    var protocolo_txt = "Protocolo";
     const protocolo_old = [protocolo_txt, protocolo_var];
     var protocolo = (protocolo_old.join('%3A%20'));
 
@@ -203,11 +195,7 @@ var shoppingCart = (function() {
     var total = 0;
     var linha = "%0a%0a%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0a%0a";
 
-<<<<<<< HEAD
-    var c_nome_var = "Dale";
-=======
     var c_nome_var =  document.getElementById("inputNome").value;
->>>>>>> fbd1d18f70a9cf8bcf4de5d26419e0ff1150e871
     const c_nome_old = ['Nome', c_nome_var];
     var c_nome = (c_nome_old.join('%3A%20'));
 
@@ -258,9 +246,11 @@ var shoppingCart = (function() {
         +  "</tr>";
 
         total += parseFloat(cartArray[i].total);
-        // total = total.toFixed(2);
+        // var total = total.toFixed(2);
+       
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text="+protocolo+data+linha+dados_cliente+linha+produtos_txt+produtos.join("%0a%0a")+linha+total_txt+total+"'>"
+    total_dec = total.toFixed(2);
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text="+protocolo+data+linha+dados_cliente+linha+produtos_txt+produtos.join("%0a%0a")+linha+total_txt+total_dec+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);

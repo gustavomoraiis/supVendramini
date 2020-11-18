@@ -722,6 +722,16 @@ footer a:hover, a:focus{
   
   /*--- end of preloader ---*/
 
+  /*--- NAV LINK TABS CARRINHO ---*/
+   .nav-tabs .nav-item.show .nav-link2, .nav-tabs .nav-link2.active {
+    color:  #ef1523;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+  .nav-link2{
+    font-size: 18px;
+  }
+
  /*--- FORMULARIO ---*/
  .margin {
     margin: 0 15%;
