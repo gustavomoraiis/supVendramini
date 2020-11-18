@@ -6540,8 +6540,8 @@ a.close.disabled {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background: no-repeat 50% / 100% 100%;
 }
 
@@ -6573,8 +6573,8 @@ a.close.disabled {
   box-sizing: content-box;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
+  width: 40px;
+  height: 5px;
   margin-right: 3px;
   margin-left: 3px;
   text-indent: -999px;
