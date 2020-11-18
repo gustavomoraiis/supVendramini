@@ -163,13 +163,17 @@ var shoppingCart = (function() {
     // document.getElementById("demo").innerHTML =  nome_cliente;
 
     var d = new Date();
-    var protocolo = d.getTime();
     var dia = d.getDate();
     var mes = d.getMonth() + 1;
     var ano = d.getFullYear();
     var hora = d.getHours();
     var minutos = d.getMinutes();
     var segundos = d.getSeconds();
+
+    var protocolo_var = d.getTime();
+    var protocolo_txt = "Protocolo%3A%20";
+    const protocolo_old = [protocolo_txt, protocolo_var];
+    var protocolo = (protocolo_old.join('%3A%20'));
 
     const data_old1 = [dia, mes, ano];
     var data_var = (data_old1.join('%2F'));
@@ -189,7 +193,7 @@ var shoppingCart = (function() {
     var produtos_old = "";
     var produtos = [];
     var total = 0;
-    var linha = "%0a%0a%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0a%0a";
+    var linha = "%0a%0a%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0a%0a";
 
     var c_nome_var =  document.getElementById("inputNome").value;
     const c_nome_old = ['Nome', c_nome_var];
@@ -211,8 +215,12 @@ var shoppingCart = (function() {
     const c_pag_old = ['Pagamento', c_pag_var];
     var c_pag = (c_pag_old.join('%3A%20'));
 
-    const dados_cliente_old = [c_nome, c_logra, c_fone, c_retirada, c_pag];
+    const dados_cliente_old = ["*CLIENTE%3A*%20%0a",c_nome, c_logra, c_fone, c_retirada, c_pag];
     var dados_cliente = (dados_cliente_old.join('%0a'));
+    
+
+    var total_txt = "Valor%20Total%3A%20R%24%20";
+    var produtos_txt = "*PRODUTOS%3A*%20%0a";
 
     for(var i in cartArray) {
       const nome_qtd = [cartArray[i].name, cartArray[i].count];
@@ -237,9 +245,10 @@ var shoppingCart = (function() {
         + "<td class=''>R$ " + cartArray[i].total + "</td>" 
         +  "</tr>";
 
-        total += parseFloat(cartArray[i].total); 
+        total += parseFloat(cartArray[i].total);
+        // total = total.toFixed(2);
     }
-    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20"+protocolo+""+data+""+linha+"*CLIENTE%3A*%20%0a"+dados_cliente+""+linha+"*PRODUTOS%3A*%20%0a"+produtos.join("%0a%0a")+""+linha+"Valor%20Total%3A%20R%24%20"+total+"'>"
+    wpp += "<a target='_blank' href='https://api.whatsapp.com/send?phone=5544998780912&text="+protocolo+data+linha+dados_cliente+linha+produtos_txt+produtos.join("%0a%0a")+linha+total_txt+total+"'>"
         + "<button type='button' class='btn btn-success'>Confirmar <i class='fab fa-whatsapp'></i></button>" 
         +  "</a>";
     $('.btn-wpp').html(wpp);

@@ -142,71 +142,102 @@
               <div class="modal-dialog modal-xl" role="document">
                 
                 <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <table class="show-cart table">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-cliente" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user"></i> Cliente</a>
+                      <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fas fa-shopping-cart"></i> Carrinho</a>
                       
-                    </table>
-                    <div>Valor Total: R$ <span class="total-cart"></span></div>
-                  </div>
-                  <div class="modal-footer">
-                    <div class="container">
-                      <form onsubmit="return false">
-                       <div class="form-row">
-                        <div class="form-group col-12 col-md-12">
-                          <label for="inputNome"><b>Nome Completo</b></label>
-                          <input type="text" class="form-control" id="inputNome" placeholder="">
-                        </div>
-                        <div class="form-group col-12 col-md-12">
-                          <label for="inputLogradouro"><b>Logradouro</b></label>
-                          <p>(Por gentileza, inserir todos os dados do logradouro.<br>
-                            Ex:'Av. Vicente Machado, n° 183, Centro, Engenheiro Beltrão - PR')</p>
-                          <input type="text" class="form-control" id="inputLogradouro" placeholder="">
-                        </div>
-                       </div>
-                       
-                        <div class="form-row">
-                          <div class="form-group col-12 col-md-4">
-                            <label for="inputTelefone">Telefone</label>
-                            <input type="text" class="form-control" id="inputTelefone">
-                          </div>
-                          <div class="form-group col-12 col-md-4">
-                            <label for="inputRetirada">Retirada</label>
-                            <select id="inputRetirada" class="form-control">
-                              <option selected>Mercado</option>
-                              <option>Delivery</option>
-                            </select>
-                          </div>
-                          <div class="form-group col-12 col-md-4">
-                            <label for="inputPagamento">Forma de Pagamento</label>
-                            <select id="inputPagamento" class="form-control">
-                              <option selected>Cartão</option>
-                              <option>Dinheiro</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="right">
-                          <!-- <button type="submit" class="btn btn-primary">Salvar</button> -->
-                          <button  class="btn btn-primary" onclick="displayCart()">Salvar</button>
-                        </div>
-                       
-                      </form>
                     </div>
-                    
-                    <span>Confirmação da compra será realizada via WhatsApp, para continuar click em "Confirmar" e aguarde pois será redirecionado automaticamente para o WhatApp.
-                      <br>Para que a compra seja confirmada, apenas envie a mensagem já programada, mas antes verifique se todos os dados estão corretos.
-                    </span>
-                    <!-- <p id="demo"></p> -->
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
-                    <div class="modal-footer btn-wpp">
-                      <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a> -->
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+
+                    <div class="tab-pane fade show active" id="nav-cliente" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-user"></i> Cliente</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                      <div class="modal-body">
+                        <div class="container">
+                          <form onsubmit="return false">
+                           <div class="form-row">
+                            <div class="form-group col-12 col-md-12">
+                              <label for="inputNome"><b>Nome Completo</b></label>
+                              <input type="text" class="form-control" id="inputNome" placeholder="">
+                            </div>
+                            <div class="form-group col-12 col-md-12">
+                              <label for="inputLogradouro"><b>Logradouro</b></label>
+                              <p>(Por gentileza, inserir todos os dados do logradouro.<br>
+                                Ex:'Av. Vicente Machado, n° 183, Centro, Engenheiro Beltrão - PR')</p>
+                              <input type="text" class="form-control" id="inputLogradouro" placeholder="">
+                            </div>
+                           </div>
+                           
+                            <div class="form-row">
+                              <div class="form-group col-12 col-md-4">
+                                <label for="inputTelefone">Telefone</label>
+                                <input type="text" class="form-control" id="inputTelefone">
+                              </div>
+                              <div class="form-group col-12 col-md-4">
+                                <label for="inputRetirada">Retirada</label>
+                                <select id="inputRetirada" class="form-control">
+                                  <option selected>Mercado</option>
+                                  <option>Delivery</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-12 col-md-4">
+                                <label for="inputPagamento">Forma de Pagamento</label>
+                                <select id="inputPagamento" class="form-control">
+                                  <option selected>Cartão</option>
+                                  <option>Dinheiro</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="right">
+                              <!-- <button type="submit" class="btn btn-primary">Salvar</button> -->
+                              <button  class="btn btn-primary" onclick="displayCart()">Salvar</button>
+                            </div>
+                           
+                          </form>
+                        </div>
+                       
+                      </div>
+                      
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
+                        <button type="button" class="btn btn-success">Carrinho <i class="fas fa-arrow-right"></i></button>
+                      </div>
                     </div>
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-shopping-cart"></i> Carrinho</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="show-cart table">
+                          
+                        </table>
+                        <div>Valor Total: R$ <span class="total-cart"></span></div>
+                      </div>
+                      <div class="modal-footer">
+                        <span>Confirmação da compra será realizada via WhatsApp, para continuar click em "Confirmar" e aguarde pois será redirecionado automaticamente para o WhatApp.
+                          <br>Para que a compra seja confirmada, apenas envie a mensagem já programada, mas antes verifique se todos os dados estão corretos.
+                        </span>
+                        <!-- <p id="demo"></p> -->
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
+                        <div class="modal-footer btn-wpp">
+                          <!-- <a target="_blank" href="https://api.whatsapp.com/send?phone=5544998780912&text=Protocolo%3A%20123456%0aData%3A%2025_11_2020"><button type="button" class="btn btn-success">Confirmar <i class="fab fa-whatsapp"></i></button></a> -->
+                        </div>
+                      </div>
+                    </div>
+                   
                   </div>
+                  
                 </div>
               </div>
             </div> 
