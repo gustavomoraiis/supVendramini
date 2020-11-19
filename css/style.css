@@ -132,8 +132,10 @@ h2.double:after {
   text-align: justify;
 }
 .img-sobre{
-  position: absolute;
-right: 0px;
+  -webkit-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 14px 29px 1px rgba(0,0,0,0.23);
+  box-shadow: 0px 14px 10px 1px rgba(0,0,0,0.23);
+  
 }
 /*---------- FadeInUp -------------------*/
 .animatable {
