@@ -57,11 +57,16 @@
                             <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
                                 <nav class="collapse">
                                   <ul class="nav nav-pills " id="mainNav">
-                                    <li><a class="ativo link-1" href="#ofertas">Ofertas do dia </a></li>
-                                    <li><a class="ativo link-1" href="produtos.html">Produtos </a></li>
-                                    <!-- <li><a class="ativo link-1" href="#pedidos">Pedidos </a></li> -->
-                                    <li><a class="ativo link-1" href="#sobre">Sobre Nós </a></li>
-                                    <li><a class="ativo link-1" href="#contato">Contato </a></li>
+                                    <!-- <li><a class="ativo link-1" href="#ofertas">Ofertas do dia</a></li> -->
+                                    <li><a class="ativo link-1" href="#produtos">Produtos</a></li>
+                                    <li><a class="ativo link-1" href="#sobre">Sobre Nós</a></li>
+                                    <li><a class="ativo link-1" href="#contato">Contato</a></li>
+                                    <li><a class="ativo link-1" href="#noticias">Notícias</a></li>
+                                  </ul>
+                                  <ul class="nav nav-pills menu-cart" id="mainNav">
+                                    <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i> Carrinho (<span class="total-count"></span>)</button>
+                                        <button class="clear-cart btn btn-danger"><i class="fas fa-trash-alt"></i> Esvaziar</button>
+                                    </li>
                                   </ul>
                                 </nav>
                             </div>
@@ -237,7 +242,10 @@
           <div class="row">
               <div class="col-md-3 col-sm-6 col-12 center">
                 <div class="produto-box">
-                  <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="200" >
+                  <div class="produto-imagem">
+                    <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Alcatra_com_Maminha.png" alt="Cerveja Subzero" width="200" >
+                  </div>
+                  
                   <div class="row pt-3 "> 
                     <div class="col-md-12">
                       <div class="center" id="countdown">
@@ -249,13 +257,15 @@
                           <li><span id="seconds1"></span>Seg</li>
                         </ul>
                       </div> 
-                      <p>Cerveja Subzero 350ml</p>
+                      <p>Alcatra com Maminha KG</p>
                     </div>
                     <div class="col-md-12">
-                      <p><b>R$ <span>1</span>,99</b></p> 
+                      <p><b>R$ <span>36</span>,98</b></p> 
                     </div>
                     <div class="col-md-12">
-                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                      <a  data-name="Alcatra_com_Maminha_KG" data-price="36.98" class="add-to-cart "> 
+                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -263,7 +273,10 @@
 
               <div class="col-md-3 col-sm-6 col-12 center">
                 <div class="produto-box">
-                  <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="200" >
+                  <div class="produto-imagem">
+                    <img class="produto-borda img-fluid" src="img/produtos/Bebidas/cerveja_subzero2.png" alt="Cerveja Subzero" width="200" >
+                  </div>
+                  
                   <div class="row pt-3 "> 
                     <div class="col-md-12">
                       <div class="center" id="countdown">
@@ -281,7 +294,9 @@
                       <p><b>R$ <span>1</span>,99</b></p> 
                     </div>
                     <div class="col-md-12">
-                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                      <a  data-name="Cerveja_Subzero_350ml" data-price="1.99" class="add-to-cart "> 
+                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -301,13 +316,15 @@
                           <li><span id="seconds3"></span>Seg</li>
                         </ul>
                       </div> 
-                      <p>Cerveja Subzero 350ml</p>
+                      <p>Alcatra com Maminha KG</p>
                     </div>
                     <div class="col-md-12">
-                      <p><b>R$ <span>1</span>,99</b></p> 
+                      <p><b>R$ <span>36</span>,98</b></p> 
                     </div>
                     <div class="col-md-12">
-                      <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                      <a  data-name="Alcatra_com_Maminha_KG" data-price="36.98" class="add-to-cart "> 
+                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -370,93 +387,24 @@
     
                 <div class="item center">
                   <div class="produto-box2">
-                    <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="200" >
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Alcatra_com_Maminha.png" alt="Cerveja Subzero" width="200" >
+                    </div>
                     <div class="row pt-3 "> 
                       <div class="col-md-12">
-                        <p>Cerveja Subzero 350ml</p>
-                        <p><b>R$ <span>1</span>,99</b></p> 
+                        <p>Alcatra com Maminha KG</p>
+                        <p><b>R$ <span>36</span>,98</b></p> 
                       </div>
                       <div class="col-md-12">
-                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        <a data-name="Alcatra_com_Maminha_KG" data-price="36.98" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="item center">
-                  <div class="produto-box2">
-                    <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="200" >
-                    <div class="row pt-3 "> 
-                      <div class="col-md-12">
-                        <p>Cerveja Subzero 350ml</p>
-                        <p><b>R$ <span>1</span>,99</b></p> 
-                      </div>
-                      <div class="col-md-12">
-                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item center">
-                  <div class="produto-box2">
-                    <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="150" >
-                    <div class="row pt-3 "> 
-                      <div class="col-md-12">
-                        <p>Cerveja Subzero 350ml</p>
-                        <p><b>R$ <span>1</span>,99</b></p> 
-                      </div>
-                      <div class="col-md-12">
-                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item center">
-                  <div class="produto-box2">
-                    <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="150" >
-                    <div class="row pt-3 "> 
-                      <div class="col-md-12">
-                        <p>Cerveja Subzero 350ml</p>
-                        <p><b>R$ <span>1</span>,99</b></p> 
-                      </div>
-                      <div class="col-md-12">
-                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item center">
-                  <div class="produto-box2">
-                    <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="150" >
-                    <div class="row pt-3 "> 
-                      <div class="col-md-12">
-                        <p>Cerveja Subzero 350ml</p>
-                        <p><b>R$ <span>1</span>,99</b></p> 
-                      </div>
-                      <div class="col-md-12">
-                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item center">
-                  <div class="produto-box2">
-                    <img class="produto-borda img-fluid" src="img/produtos/cerveja_subzero2.png" alt="Cerveja Subzero" width="150" >
-                    <div class="row pt-3 "> 
-                      <div class="col-md-12">
-                        <p>Cerveja Subzero 350ml</p>
-                        <p><b>R$ <span>1</span>,99</b></p> 
-                      </div>
-                      <div class="col-md-12">
-                        <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <!-- FIM DIV PRODUTOS -->
 
               </div>
             </div>
@@ -466,20 +414,6 @@
       </div>
     </section>
   <!-- ####### Produtos Fim #######-->
-
-    <!-- ###### Pedidos Início ######-->
-    <!-- <section id="pedidos" class="cinza">
-      <div class="container">
-        <h2 class="background double cinza"><span>Pedidos</span></h2>
-          <div class="row">
-              
-            
-          </div>
-          
-          
-      </div>
-    </section> -->
-  <!-- ####### Pedidos Fim #######-->
 
   <!-- ###### Sobre Nós Início ######-->
     <section id="sobre" class="cinza">
@@ -577,53 +511,23 @@
                   </div>
 
 
-
-                  <!-- <form action="curriculo.php">
-                    <div class="container center">
-                      <div class="inputGroup">      
-                        <input type="text" required />
-                        <span class="inputBar"></span>
-                        <label>Nome</label>
-                      </div>
-                    
-                      <div class="inputGroup">      
-                        <input type="text" required />
-                        <span class="inputBar"></span>
-                        <label>Email</label>
-                      </div>
-                    
-                      <div class="inputGroup">      
-                        <textarea type="textarea" required></textarea>
-                        <span class="inputBar"></span>
-                        <label>Mensagem</label>
-                      </div>
-
-                      <div class='input-wrapper'>
-                        <label for='input-file'>
-                          Currículo
-                          <i class="far fa-file-word"></i>
-                        </label>
-                        <input id='input-file' type='file' value='' />
-                        <span id='file-name'></span>
-                      </div>
-                    
-                      <a href="#"><button type="button" class="btn btn-estilo">Enviar <i class="fas fa-check"></i></button></a>
-                      
-                    </div>
-
-                  </form> -->
-
               </div>
             </div>
         </div>
       </section>
-        <!-- LightWidget WIDGET -->
-      <!-- <section>
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c0d7092954df57f099015d4d21587636.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-      </section> -->
   <!-- ###### Contato Fim ######-->
- 
- 
+  
+    <!-- ###### Notícias Início ######-->
+    <section id="noticias" class="cinza">
+      <div class="container">
+        <h2 class="background double cinza"><span>Notícias</span></h2>
+        <div class="container">
+          <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/478ebeced86c56b7a318592abd66dd89.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+      </div>
+    </section>
+  <!-- ####### Notícias Fim #######-->
+      
   
 
   <!-- ###### Footer Início ######-->
@@ -716,7 +620,7 @@
             </div>
             
             <div class="col-lg-6 col-md-6 direita footer-responsivo">
-              <p class="mb-0">Desenvolvido por <a target="_blank" href="https://github.com/gustavoxdhenrique">Gustavo Morais</a>, <a href="#">Junior Vendramini</a>, <a href="#">Gabriel Glatz</a> </p>
+              <p class="mb-0">Desenvolvido por <a target="_blank" href="https://www.instagram.com/gustavomorais._/">Gustavo Morais</a>, <a target="_blank" href="https://www.instagram.com/junior_vendramini/">Junior Vendramini</a>, <a target="_blank" href="https://www.instagram.com/glatz/">Gabriel Glatz</a> </p>
             </div>
             
           </div>
@@ -731,15 +635,21 @@
     <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
-  
+    <script src="js/cart.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>  
+    <script>
+      $(document).ready(function(){
+       $('#inputTelefone').mask('(00) 00000-0000');
+       })
+    </script>
       
     <script>
      $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
+        loop:false,
         nav: true,
-        dots: false,
+        dots: true,
         navText: [
           "<i class='fa fa-caret-left'></i>",
           "<i class='fa fa-caret-right'></i>"
@@ -760,12 +670,8 @@
       })
     </script>
 
-  
-    
-    
-  
     <script src="js/custom.js"></script>
-    <script src="js/slideNav.js"></script>
+    <!-- <script src="js/slideNav.js"></script> -->
     <!-- <script src="js/functions.js"></script>
 
    

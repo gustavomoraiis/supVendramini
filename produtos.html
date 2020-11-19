@@ -60,7 +60,6 @@
                                   <ul class="nav nav-pills " id="mainNav">
                                     <li><a class="ativo link-1" href="#ofertas">Ofertas do dia </a></li>
                                     <li><a class="ativo link-1" href="#produtos">Produtos </a></li>
-                                    <!-- <li><a class="ativo link-1" href="#pedidos">Pedidos </a></li> -->
                                     <li><a class="ativo link-1" href="#sobre">Sobre Nós </a></li>
                                     <li><a class="ativo link-1" href="#contato">Contato </a></li>
                                   </ul>
@@ -144,7 +143,7 @@
                   </div>
                   <div class="right">
                     <!-- <button type="submit" class="btn btn-primary">Salvar</button> -->
-                    <button class="btn btn-primary" onclick="displayCart()">Salvar</button>
+                    <a id="nav-profile-tab" data-toggle="tab" href="#nav-carrinho" role="tab" aria-controls="nav-profile" aria-selected="false"> <button class="btn btn-primary" onclick="displayCart()">Salvar</button> </a> 
                   </div>
                   
                 </form>
@@ -154,7 +153,6 @@
             
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar <i class="fas fa-times"></i></button>
-              <a id="nav-profile-tab" data-toggle="tab" href="#nav-carrinho" role="tab" aria-controls="nav-profile" aria-selected="false"><button type="button" class="btn btn-primary">Próximo <i class="fas fa-arrow-right"></i></button></a> 
             </div>
           </div>
 
@@ -576,7 +574,7 @@
             </div>
             
             <div class="col-lg-6 col-md-6 direita footer-responsivo">
-              <p class="mb-0">Desenvolvido por <a target="_blank" href="https://github.com/gustavoxdhenrique">Gustavo Morais</a>, <a href="#">Junior Vendramini</a>, <a href="#">Gabriel Glatz</a> </p>
+              <p class="mb-0">Desenvolvido por <a target="_blank" href="https://www.instagram.com/gustavomorais._/">Gustavo Morais</a>, <a target="_blank" href="https://www.instagram.com/junior_vendramini/">Junior Vendramini</a>, <a target="_blank" href="https://www.instagram.com/glatz/">Gabriel Glatz</a> </p>
             </div>
             
           </div>
@@ -664,14 +662,6 @@
         }
       })
     </script>
-
-  <script>
-    var d = new Date();
-    document.getElementById("demo").innerHTML = d.getTime();
-  </script>
-    
-    
-  
     <!-- <script src="js/custom.js"></script> -->
     <!-- <script src="js/slideNav.js"></script> -->
     <!-- <script src="js/functions.js"></script>
@@ -723,14 +713,7 @@
         $('#inputTelefone').mask('(00) 00000-0000');
     })
      </script>
-   
-   <script>
-      function myFunction() {
-    var x = "";
-    var x = document.getElementById("inputNome").value;
-    document.getElementById("demo").innerHTML = x;
-  }
-   </script>
+  
 
   </body>
 </html>
