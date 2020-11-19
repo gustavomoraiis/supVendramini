@@ -1,7 +1,8 @@
 body {
 	line-height: 1.5;
 	color: #555;
-	font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+  
 }
 section{
   padding: 40px 0px 60px 0px;
@@ -33,12 +34,16 @@ html{
   text-align: center;
   color: #1f1e1e;
 }
+h3{
+  font-family: 'Poppins', sans-serif;
+}
 h2 {
   font: 33px sans-serif;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
 }
 h2.background {
   position: relative;
@@ -122,6 +127,13 @@ h2.double:after {
 }
 .btn-estilo a{
   text-decoration: none !important;
+}
+.txt-sobre{
+  text-align: justify;
+}
+.img-sobre{
+  position: absolute;
+right: 0px;
 }
 /*---------- FadeInUp -------------------*/
 .animatable {
@@ -1218,6 +1230,17 @@ footer a:hover, a:focus{
 }
 
 /* ########### */
+.counter i{
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: rgb(46,48,148);
+  color: radial-gradient(circle, rgba(46,48,148,1) 0%, rgba(0,13,131,1) 100%);
+  transition: .3s ease-in-out;
+}
+.counter:hover i{
+  color:#ef1523;
+}
 .counter {
   background-color: transparent;
   padding: 20px 0;
@@ -1236,11 +1259,4 @@ footer a:hover, a:focus{
   margin-top: 10px;
   margin-bottom: 0;
   text-align: center;
-}
-.fa-2x {
-  margin: 0 auto;
-  float: none;
-  display: table;
-  color: rgb(46,48,148);
-  color: radial-gradient(circle, rgba(46,48,148,1) 0%, rgba(0,13,131,1) 100%);
 }
