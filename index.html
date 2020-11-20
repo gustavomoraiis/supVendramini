@@ -147,7 +147,7 @@
                   </div>
                   <div class="right">
                     <!-- <button type="submit" class="btn btn-primary">Salvar</button> -->
-                    <button class="btn btn-primary" onclick="displayCart()">Salvar</button>
+                    <a id="nav-profile-tab" data-toggle="tab" href="#nav-carrinho" role="tab" aria-controls="nav-profile" aria-selected="false"> <button class="btn btn-primary" onclick="displayCart()">Salvar</button> </a> 
                   </div>
                   
                 </form>
@@ -195,7 +195,7 @@
   <!-- ####### Modal Carrinho ####### -->
          
   <!-- ####### Banner Carousel Início #####-->
-    <section class="p-0">
+    <section class="pb-0">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -248,7 +248,7 @@
               <div class="col-md-3 col-sm-6 col-12 center">
                 <div class="produto-box">
                   <div class="produto-imagem">
-                    <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Picanha_bovina.png" alt="Cerveja Subzero" width="200" >
+                    <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Bacalhau.png" alt="Bacalhau Porto Imperial KG" width="200" >
                   </div>
                   
                   <div class="row pt-3 "> 
@@ -262,13 +262,13 @@
                           <li><span id="seconds1"></span>Seg</li>
                         </ul>
                       </div> 
-                      <p>Picanha Bovina KG</p>
+                      <p>Bacalhau Porto Imperial KG</p>
                     </div>
                     <div class="col-md-12">
-                      <p><b>R$ <span>69</span>,95</b></p> 
+                      <p><b>R$ <span>74</span>,90</b></p> 
                     </div>
                     <div class="col-md-12">
-                      <a  data-name="Picanha_Bovina_KG" data-price="69.95" class="add-to-cart "> 
+                      <a  data-name="Bacalhau_Porto_Imperial_KG" data-price="74.90" class="add-to-cart "> 
                         <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
                       </a>
                     </div>
@@ -279,7 +279,7 @@
               <div class="col-md-3 col-sm-6 col-12 center">
                 <div class="produto-box">
                   <div class="produto-imagem">
-                    <img class="produto-borda img-fluid" src="img/produtos/Bebidas/Whisky_Americano_Jack_Daniel's_Honey_Garrafa_1_Litro.png" alt="Cerveja Subzero" width="200" >
+                    <img class="produto-borda img-fluid" src="img/produtos/Frios_laticinios/Salame_Sadia_Italiano_Fatiado_100g.png" alt="Salame Sadia Italiano Fatiado 100g" width="200" >
                   </div>
                   
                   <div class="row pt-3 "> 
@@ -293,13 +293,13 @@
                           <li><span id="seconds2"></span>Seg</li>
                         </ul>
                       </div> 
-                      <p>Whisky Americano Jack Daniel's Honey Garrafa 1L</p>
+                      <p>Salame Sadia Italiano Fatiado 100g</p>
                     </div>
                     <div class="col-md-12">
-                      <p><b>R$ <span>119</span>,90</b></p> 
+                      <p><b>R$ <span>9</span>,79</b></p> 
                     </div>
                     <div class="col-md-12">
-                      <a  data-name="Whisky_Americano_Jack_Daniel's_Honey_Garrafa_1L" data-price="119.90" class="add-to-cart "> 
+                      <a  data-name="Salame_Sadia_Italiano_Fatiado_100g" data-price="9.79" class="add-to-cart "> 
                         <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
                       </a>
                     </div>
@@ -309,7 +309,10 @@
             
               <div class="col-md-3 col-sm-6 col-12 center">
                 <div class="produto-box">
-                  <img class="produto-borda img-fluid" src="img/produtos/Biscoitos_salgadinhos/Batata_Elma_Chips_Stax_Cheddar_Embalagem_156G.png" alt="Cerveja Subzero" width="200" >
+                  <div class="produto-imagem">
+                    <img class="produto-borda img-fluid" src="img/produtos/Biscoitos_salgadinhos/Batata_Elma_Chips_Stax_Cheddar_Embalagem_156G.png" alt="Batata Elma Chips Stax Cheddar Embalagem 156g" width="200" >
+                  </div>
+                  
                   <div class="row pt-3 "> 
                     <div class="col-md-12">
                       <div class="center" id="countdown">
@@ -321,7 +324,7 @@
                           <li><span id="seconds3"></span>Seg</li>
                         </ul>
                       </div> 
-                      <p>Batata Elma Chips Stax Cheddar Embalagem 156G</p>
+                      <p>Batata Elma Chips Stax Cheddar Embalagem 156g</p>
                     </div>
                     <div class="col-md-12">
                       <p><b>R$ <span>7</span>,99</b></p> 
@@ -337,25 +340,27 @@
           
               <div class="col-md-3 col-sm-6 col-12 center">
                 <div class="produto-box">
-                  <img class="produto-borda img-fluid" src="img/produtos/higiene/Escova_Dental_Colgate_Twister_3Un.png" alt="Cerveja Subzero" width="200" >
+                  <div class="produto-imagem">
+                    <img class="produto-borda img-fluid" src="img/produtos/Bebidas/Whisky_Americano_Jack_Daniel's_Honey_Garrafa_1_Litro.png" alt="Cerveja Subzero" width="200" >
+                  </div>
                   <div class="row pt-3 "> 
                     <div class="col-md-12">
                       <div class="center" id="countdown">
                         <span>Oferta expira em:</span>
                         <ul>
-                          <li><span id="days3"></span>Dias</li>
-                          <li><span id="hours3"></span>H</li>
-                          <li><span id="minutes3"></span>Min</li>
-                          <li><span id="seconds3"></span>Seg</li>
+                          <li><span id="days4"></span>Dias</li>
+                          <li><span id="hours4"></span>H</li>
+                          <li><span id="minutes4"></span>Min</li>
+                          <li><span id="seconds4"></span>Seg</li>
                         </ul>
                       </div> 
-                      <p>Escova Dental Colgate Twister 3Un</p>
+                      <p>Whisky Americano Jack_Daniel's Honey Garrafa 1L</p>
                     </div>
                     <div class="col-md-12">
-                      <p><b>R$ <span>19</span>,79</b></p> 
+                      <p><b>R$ <span>136</span>,40</b></p> 
                     </div>
                     <div class="col-md-12">
-                      <a  data-name="Escova_Dental_Colgate_Twister_3Un" data-price="19.79" class="add-to-cart "> 
+                      <a  data-name="Whisky_Americano_Jack_Daniel's_Honey_Garrafa_1L" data-price="136.40" class="add-to-cart "> 
                         <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
                       </a>
                     </div>
@@ -392,10 +397,10 @@
             <div class="carousel-wrap col-md-12">
               <div class="owl-carousel">
     
-                <div class="item center">
+                 <div class="item center"> 
                   <div class="produto-box2">
                     <div class="produto-imagem">
-                      <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Alcatra_com_Maminha.png" alt="Cerveja Subzero" width="200" >
+                      <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Alcatra_com_Maminha.png" alt="Cerveja Subzero" width="150" >
                     </div>
                     <div class="row pt-3 "> 
                       <div class="col-md-12">
@@ -409,6 +414,196 @@
                       </div>
                     </div>
                   </div>
+                </div> 
+
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Bebidas/cerveja_subzero2.png" alt="Cerveja Subzero" width="75">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Cerveja Subzero 350ml</p>
+                        <p class="mb-1"><b>R$ <span>1</span>,99</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Cerveja_Subzero_350ml" data-price="1.99" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Hortifruti/Banana.png" alt="Banana Prata" width="75">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Banana Prata KG</p>
+                        <p class="mb-1"><b>R$ <span>1</span>,25</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Banana_Prata_KG" data-price="1.25" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Carne_Peixes_Aves/Alcatra_com_Maminha.png" alt="Alcatra com Maminha" width="75">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Alcatra com Maminha KG</p>
+                        <p class="mb-1"><b>R$ <span>36</span>,98</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Alcatra_com_Maminha_KG" data-price="36.98" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Frios_laticinios/Margarina_Doriana_com_Sal_500G.png" alt="Margarina Doriana 500GR " width="75">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Margarina Doriana 500g C/Sal</p>
+                        <p class="mb-1"><b>R$ <span>5</span>,59</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Margarina_Doriana_500gr_C_Sal" data-price="5.59" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/higiene/Absorvente_Intimus_Day_Diário_sem_Perfume_sem_Abas_Oferta_Pacote_40Un.png" alt="Absorvente Intimus 40un" width="100">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Absorvente Intimus Dia Sem Abas 40un</p>
+                        <p class="mb-1"><b>R$ <span>29</span>,99</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Absorvente_Intimus_Dia_Sem_Abas_40un" data-price="29.99" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Molhos_condimentos_conservas/tempero_sazon_amarelo_legumes_60g.png" alt="Tempero Sazon Amarelo Legumes 60g" width="100">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Tempero Sazon Amarelo Legumes 60g</p>
+                        <p class="mb-1"><b>R$ <span>4</span>,99</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Tempero_Sazon_Amerelo_Legumes_60_g" data-price="4.99" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/limpeza/Detergente_Ypê_500ml.png" alt="Detergente Líquido 500ml Ypê Neutro" width="100">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Detergente Líquido 500ml Ypê Neutro</p>
+                        <p class="mb-1"><b>R$ <span>2</span>,15</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Detergente_Líquido_500ml_Ypê_Neutro" data-price="2.15" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Padaria/pão_frances.png" alt="Pão Francês KG" width="100">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Pão Francês KG</p>
+                        <p class="mb-1"><b>R$ <span>11</span>,99</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Pão_Francês_KG" data-price="11.99" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/Biscoitos_salgadinhos/Batata_Elma_Chips_Stax_Cheddar_Embalagem_156G.png" alt="Batata Elma Chips Stax Cheddar 156g" width="100">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Batata Elma Chips Stax Cheddar 156g</p>
+                        <p class="mb-1"><b>R$ <span>12</span>,99</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Batata_Elma_Chips_Stax_Cheddar_170g" data-price="12.99" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="item center">
+                  <div class="produto-box2">
+                    <div class="produto-imagem">
+                      <img class="produto-borda img-fluid" src="img/produtos/aliementos_basicos/Oleo_soja_coamo_900ml.png" alt="Óleo Soja Coamo 900ml" width="100">
+                    </div>
+                    <div class="row pt-1 "> 
+                      <div class="col-md-12">
+                        <p class="mb-1">Óleo Soja Coamo 900ml</p>
+                        <p class="mb-1"><b>R$ <span>7</span>,29</b></p> 
+                      </div>
+                      <div class="col-md-12">
+                        <a  data-name="Óleo_Soja_Coamo_900ml" data-price="7.29" class="add-to-cart "> 
+                          <button type="button" class="btn btn-estilo">Comprar <i class="fas fa-shopping-cart"></i></button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <!-- FIM DIV PRODUTOS -->
@@ -416,7 +611,7 @@
               </div>
             </div>
             <div class="col-md-12 center">
-              <a href="#"><button type="button" class="btn btn-estilo">Ver Mais <i class="fas fa-arrow-right"></i></button></a>
+              <a href="produtos.html"><button type="button" class="btn btn-estilo">Ver Mais <i class="fas fa-arrow-right"></i></button></a>
             </div>
       </div>
     </section>
@@ -578,7 +773,7 @@
       <div class="container">
         <h2 class="background double cinza"><span>Notícias</span></h2>
         <div class="container">
-        
+         <!-- LightWidget WIDGET -->
          <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/d8167f8d6f695a7eb4f9a47fafd9b18e.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
         </div>
       </div>
@@ -694,7 +889,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="js/cart.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>  
-    <script src="js/custom.js"></script>
     <script>
       $(document).ready(function(){
        $('#inputTelefone').mask('(00) 00000-0000');
@@ -728,10 +922,9 @@
       })
     </script>
 
-    
+    <script src="js/custom.js"></script>
     <!-- <script src="js/slideNav.js"></script> -->
     <!-- <script src="js/functions.js"></script>
-
    
          
     <script defer

@@ -163,7 +163,7 @@ function scrollFooter(scrollY, heightFooter)
           hour = minute * 60,
           day = hour * 24;
   
-    let birthday = "Oct 27, 2020 00:00:00",
+    let birthday = "Nov 23, 2020 23:59:00",
         countDown = new Date(birthday).getTime(),
         x = setInterval(function() {    
   
@@ -184,7 +184,7 @@ function scrollFooter(scrollY, heightFooter)
               hour = minute * 60,
               day = hour * 24;
       
-        let birthday = "Oct 27, 2020 18:00:00",
+        let birthday = "Nov 23, 2020 23:59:00",
             countDown = new Date(birthday).getTime(),
             x = setInterval(function() {    
       
@@ -205,7 +205,7 @@ function scrollFooter(scrollY, heightFooter)
                   hour = minute * 60,
                   day = hour * 24;
           
-            let birthday = "Oct 28, 2020 00:00:00",
+            let birthday = "Nov 23, 2020 23:55:00",
                 countDown = new Date(birthday).getTime(),
                 x = setInterval(function() {    
           
@@ -226,7 +226,7 @@ function scrollFooter(scrollY, heightFooter)
                       hour = minute * 60,
                       day = hour * 24;
               
-                let birthday = "Oct 30, 2020 00:00:00",
+                let birthday = "Nov 23, 2020 23:45:00",
                     countDown = new Date(birthday).getTime(),
                     x = setInterval(function() {    
               

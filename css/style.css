@@ -1004,9 +1004,25 @@ footer a:hover, a:focus{
   display: block;
   margin-left: auto;
   margin-right: auto;
-   
   width: 70%;
 }
+
+
+/* .produto-imagem2{
+  width: 140px;
+  height: 140px;
+  min-height: 10em;
+  display: table-cell;
+  vertical-align: middle;
+  align-self: center;
+}
+.produto-imagem2 img{
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
 .produto-borda{
   border-radius: 20px;
   /* border: 2px solid #2e3094; */
